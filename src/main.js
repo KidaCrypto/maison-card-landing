@@ -1,4 +1,11 @@
 import './styles.css'
+import { getLegalPage, renderLegalPage } from './legal.js'
+
+const legalPage = getLegalPage(window.location.pathname)
+
+if (legalPage) {
+  renderLegalPage(legalPage)
+} else {
 
 const appStoreUrl = import.meta.env.VITE_APP_STORE_URL || 'https://apps.apple.com/'
 
@@ -167,6 +174,8 @@ document.querySelector('#app').innerHTML = `
             <a href="#packs">Packs</a>
             <a href="#collection">Collection</a>
             <a href="${appStoreUrl}" target="_blank" rel="noreferrer">Download</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
           </div>
         </nav>
         <address class="footer-address">
@@ -213,3 +222,4 @@ navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click'
   menuButton.setAttribute('aria-expanded', 'false')
   navigation.classList.remove('is-open')
 }))
+}
