@@ -30,7 +30,7 @@ const icon = (name) => {
 document.querySelector('#app').innerHTML = `
   <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="The Social Experiment home"><span class="brand__name">The Social<br />Experiment</span></a>
+      <a class="brand" href="#top" aria-label="Rumby home"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="Rumby" /></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span class="sr-only">Open navigation</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="#how">How it works</a>
@@ -54,7 +54,7 @@ document.querySelector('#app').innerHTML = `
 
         <div class="app-preview" aria-label="The Social Experiment pack screen preview">
           <div class="app-topbar">
-            <img src="/assets/social-experiment-mark.svg" alt="" aria-hidden="true" />
+            <img src="/assets/rumby-mark.png" alt="" aria-hidden="true" />
             <span class="balance"><b>$</b>$247.00</span>
             <span class="profile" aria-hidden="true"></span>
           </div>
@@ -153,7 +153,7 @@ document.querySelector('#app').innerHTML = `
       </section>
 
       <section class="final-cta" aria-labelledby="cta-title">
-        <img src="/assets/social-experiment-mark.svg" alt="" aria-hidden="true" />
+        <img src="/assets/rumby-mark.png" alt="" aria-hidden="true" />
         <div><p class="eyebrow"><span></span>The Social Experiment for iPhone</p><h2 id="cta-title">Your next pull<br />starts here.</h2></div>
         ${cta('Get The Social Experiment')}
       </section>
@@ -162,7 +162,7 @@ document.querySelector('#app').innerHTML = `
     <footer class="site-footer">
       <div class="footer-main">
         <div class="footer-brand">
-          <a class="brand brand--footer" href="#top"><span class="brand__name">The Social<br />Experiment</span></a>
+          <a class="brand brand--footer" href="#top"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="Rumby" /></a>
           <p>Open packs. Find your grail.</p>
         </div>
         <nav class="footer-sitemap" aria-label="Footer sitemap">

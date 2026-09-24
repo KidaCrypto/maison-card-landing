@@ -1,6 +1,6 @@
 const legalHeader = () => `
   <header class="site-header legal-header">
-    <a class="brand" href="/" aria-label="The Social Experiment home"><span class="brand__name">The Social<br />Experiment</span></a>
+    <a class="brand" href="/" aria-label="Rumby home"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="Rumby" /></a>
     <a class="legal-header__back" href="/">Back to home <span aria-hidden="true">→</span></a>
   </header>`
 
@@ -8,7 +8,7 @@ const legalFooter = () => `
   <footer class="site-footer legal-footer">
     <div class="footer-main">
       <div class="footer-brand">
-        <a class="brand brand--footer" href="/"><span class="brand__name">The Social<br />Experiment</span></a>
+        <a class="brand brand--footer" href="/"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="Rumby" /></a>
         <p>Open packs. Find your grail.</p>
       </div>
       <nav class="footer-sitemap" aria-label="Legal pages">
