@@ -1,6 +1,6 @@
-# The Social Experiment landing page
+# RumbyTCG landing page
 
-Marketing site for the The Social Experiment iOS app, based on the structure of `maison-landing` and the visual system of `maison-card`.
+Marketing site for the RumbyTCG iOS app, operated by The Social Experiment LLC, based on the structure of `maison-landing` and the visual system of `maison-card`.
 
 ## Development
 

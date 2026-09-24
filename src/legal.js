@@ -1,6 +1,6 @@
 const legalHeader = () => `
   <header class="site-header legal-header">
-    <a class="brand" href="/" aria-label="Rumby home"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="Rumby" /></a>
+    <a class="brand" href="/" aria-label="RumbyTCG home"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="RumbyTCG" /></a>
     <a class="legal-header__back" href="/">Back to home <span aria-hidden="true">→</span></a>
   </header>`
 
@@ -8,7 +8,7 @@ const legalFooter = () => `
   <footer class="site-footer legal-footer">
     <div class="footer-main">
       <div class="footer-brand">
-        <a class="brand brand--footer" href="/"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="Rumby" /></a>
+        <a class="brand brand--footer" href="/"><img class="brand__mark" src="/assets/rumby-mark.png" alt="" /><img class="brand__wordmark" src="/assets/rumby-wordmark.png" alt="RumbyTCG" /></a>
         <p>Open packs. Find your grail.</p>
       </div>
       <nav class="footer-sitemap" aria-label="Legal pages">
@@ -24,7 +24,7 @@ const legalFooter = () => `
       </address>
     </div>
     <div class="footer-bottom">
-      <p>© ${new Date().getFullYear()} The Social Experiment. All rights reserved.</p>
+      <p>© ${new Date().getFullYear()} The Social Experiment LLC. All rights reserved.</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>`
@@ -36,7 +36,7 @@ const privacyPolicy = `
 
   <section>
     <h2><span>01</span> Introduction</h2>
-<p>This Privacy Policy describes how <strong>The Social Experiment LLC (“The Social Experiment”, “we”, “us”, or “our”)</strong> collects, uses, stores, and shares information when you use <a href="https://rumbycollectibles.io">rumbycollectibles.io</a>, our mobile application, and related services (collectively, the <strong>“Service”</strong>).</p>
+<p>This Privacy Policy describes how <strong>The Social Experiment LLC (“The Social Experiment”, “we”, “us”, or “our”)</strong> collects, uses, stores, and shares information when you use <a href="https://rumbycollectibles.io">rumbycollectibles.io</a>, our RumbyTCG mobile application, and related services (collectively, the <strong>“Service”</strong>).</p>
 <p>The Service includes collectible packs and draws, account collections, buybacks, physical item redemption and shipping, promotions, and eligible balance withdrawals. We use Clerk for user authentication and Stripe for payment processing and Stripe Connect payouts.</p>
 <p>This policy explains our data practices; where consent is required, we will request it separately. For questions or privacy requests, email <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a>.</p>
   </section>
@@ -165,7 +165,7 @@ const termsOfService = `
   <h1>TERMS OF SERVICE</h1>
   <p class="legal-updated">Last updated: September 24, 2026</p>
   <div class="legal-intro">
-<p>These Terms of Service (the <strong>“Terms”</strong>) are a legally binding agreement between you and <strong>The Social Experiment LLC</strong>, a limited liability company (<strong>“The Social Experiment”, “we”, “us”, or “our”</strong>), governing your use of our website, mobile application, and related services (the <strong>“Service”</strong>). Supplemental terms presented for a particular feature form part of this agreement and control for that feature if they conflict with these Terms.</p>
+<p>These Terms of Service (the <strong>“Terms”</strong>) are a legally binding agreement between you and <strong>The Social Experiment LLC</strong>, a limited liability company (<strong>“The Social Experiment”, “we”, “us”, or “our”</strong>), governing your use of our website, the RumbyTCG mobile application, and related services (the <strong>“Service”</strong>). Supplemental terms presented for a particular feature form part of this agreement and control for that feature if they conflict with these Terms.</p>
 <p>By accessing or using the Service, including buying packs, participating in draws, requesting buybacks or shipping, or funding or withdrawing eligible balances, you agree to these Terms. Please also read our <a href="/privacy-policy">Privacy Policy</a>. If you do not agree to these Terms, do not use the Service.</p>
 <p><strong>Section 26 contains an individual arbitration agreement and class-action waiver, including a 30-day right to opt out. Please read it carefully.</strong></p>
 </div>
@@ -182,7 +182,7 @@ const termsOfService = `
 
   <section>
     <h2><span>03</span> The Service</h2>
-<p>The Social Experiment provides collectible purchasing and collection features, including randomized packs and draws, buybacks, and physical redemption and shipping. Features depend on availability, location, account eligibility, and the rules shown in the Service.</p>
+<p>The Social Experiment operates RumbyTCG, which provides collectible purchasing and collection features, including randomized packs and draws, buybacks, and physical redemption and shipping. Features depend on availability, location, account eligibility, and the rules shown in the Service.</p>
 <p>An <strong>“Item”</strong> is a collectible recorded in your account, including a physical collectible held for fulfillment where indicated. Item ownership, transactions, and balances are recorded in our account system. The item description identifies what you acquire and whether it is eligible for physical delivery. Acquiring an Item does not grant intellectual property rights in its artwork, brand, or other protected content.</p>
   </section>
 
@@ -261,7 +261,7 @@ const termsOfService = `
 
   <section>
 <h2><span>14</span> Our Intellectual Property Rights</h2>
-<p>The Service and all content, features, materials and functionality therein, including the The Social Experiment logo, designs, text, graphics, pictures, information, data, software, sound files, and their selection and arrangement (collectively, &quot;<strong>Content</strong>&quot;), are the proprietary property of The Social Experiment or our affiliates or licensors. You receive no rights to the Service or its Materials except as expressly granted in these Terms and all rights not expressly granted are reserved. Any unauthorized use may violate these Terms and applicable laws.
+<p>The Service and all content, features, materials and functionality therein, including the RumbyTCG logo, designs, text, graphics, pictures, information, data, software, sound files, and their selection and arrangement (collectively, &quot;<strong>Content</strong>&quot;), are the proprietary property of The Social Experiment or our affiliates or licensors. You receive no rights to the Service or its Materials except as expressly granted in these Terms and all rights not expressly granted are reserved. Any unauthorized use may violate these Terms and applicable laws.
 You may not use metatags or &quot;hidden text&quot; utilizing &quot;The Social Experiment&quot; or any other name, trademark, or product or service name without permission. The Service&#x27;s look and feel, including page headers, custom graphics, button icons, and scripts, constitute our trade dress and may not be copied or used without permission. All other trademarks, product names, and logos are the property of their respective owners.</p>
   </section>
 
@@ -391,10 +391,10 @@ If any term, clause, or provision of this Agreement is held invalid or unenforce
   <section>
 <h2><span>28</span> Giveaways and Sweepstakes</h2>
 <p><strong>Overview</strong>. From time to time, The Social Experiment may offer promotional giveaways, sweepstakes, contests, or similar incentive programs (&quot;Promotions&quot;). These Promotions are subject to this section, this Agreement, and any additional Official Rules provided for each Promotion. In any conflict, the Official Rules govern over this section, and this section governs over the remaining Terms.</p>
-<p><strong>Eligibility</strong>. Participation is void where prohibited by law. You must meet all requirements in the Official Rules, including age, residency, and account status criteria. Certain Promotions may require a registered The Social Experiment account in good standing.</p>
-<p><strong>No Purchase Necessary</strong>. Unless otherwise stated, no purchase or payment is required to enter or win. As an Alternate Method of Entry (&quot;AMOE&quot;), eligible users may enter by: creating a The Social Experiment account (if not already having one); logging in daily to claim points as specified in the Official Rules; and clicking the designated entry link on the Promotion page without purchase or payment. Entry link: <a href="https://rumbycollectibles.io/promotions">https://rumbycollectibles.io/promotions</a>. Specific details are outlined in the Official Rules. All AMOE entries must be received during the Promotion Period.</p>
+<p><strong>Eligibility</strong>. Participation is void where prohibited by law. You must meet all requirements in the Official Rules, including age, residency, and account status criteria. Certain Promotions may require a registered RumbyTCG account in good standing.</p>
+<p><strong>No Purchase Necessary</strong>. Unless otherwise stated, no purchase or payment is required to enter or win. As an Alternate Method of Entry (&quot;AMOE&quot;), eligible users may enter by: creating a RumbyTCG account (if not already having one); logging in daily to claim points as specified in the Official Rules; and clicking the designated entry link on the Promotion page without purchase or payment. Entry link: <a href="https://rumbycollectibles.io/promotions">https://rumbycollectibles.io/promotions</a>. Specific details are outlined in the Official Rules. All AMOE entries must be received during the Promotion Period.</p>
 <p><strong>Odds and Prizes</strong>. Odds of winning depend on eligible entries received. Prizes, approximate retail values, and relevant restrictions are described in the Official Rules. Any applicable taxes, fees, or expenses not specifically included in the prize are the winner&#x27;s sole responsibility.</p>
-<p><strong>Winner Selection and Notification</strong>. Winners will be selected at random (or by criteria set forth in the Official Rules) from eligible entries. Winners will be notified using their The Social Experiment account contact information. You are responsible for ensuring your contact information is accurate and current.</p>
+<p><strong>Winner Selection and Notification</strong>. Winners will be selected at random (or by criteria set forth in the Official Rules) from eligible entries. Winners will be notified using their RumbyTCG account contact information. You are responsible for ensuring your contact information is accurate and current.</p>
 <p><strong>Compliance and Disqualification</strong>. We reserve the right to disqualify any participant who tampers with the entry process, circumvents rules, violates this Agreement, or engages in fraudulent or unethical behavior. We may cancel, suspend, or modify any Promotion due to force majeure or factors beyond our reasonable control, as permitted by law.</p>
 <p><strong>Limitation of Liability</strong>. By participating, you acknowledge that The Social Experiment, its affiliates, subsidiaries, partners, and their officers, directors, employees, and agents will not be liable for any claims, losses, or damages arising from participation, including technical failures, unauthorized tampering, or non-delivery of communications.</p>
 <p><strong>Governing Law and Venue</strong>. Unless otherwise specified, Promotions are governed by the laws specified in this Agreement without regard to conflict of law principles, and disputes shall be handled per the dispute resolution provisions herein.</p>
@@ -403,7 +403,7 @@ If any term, clause, or provision of this Agreement is held invalid or unenforce
 
   <section>
 <h2><span>29</span> Contact Information</h2>
-<p>The Social Experiment LLC, operator of The Social Experiment</p>
+<p>The Social Experiment LLC, operator of RumbyTCG</p>
 <p>Email: <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a></p>
 <p>Legal: <a href="mailto:legal@rumbycollectibles.io">legal@rumbycollectibles.io</a></p>
 <p>Address: 8 The Green, Suite R, Dover, DE 19901, United States</p>
@@ -411,18 +411,18 @@ If any term, clause, or provision of this Agreement is held invalid or unenforce
 
 const pages = {
   '/privacy-policy': {
-    title: 'Privacy Policy | The Social Experiment',
+    title: 'Privacy Policy | RumbyTCG',
     description: 'Learn how The Social Experiment collects, uses, and protects your information.',
     content: privacyPolicy
   },
   '/terms-of-service': {
-    title: 'Terms of Service | The Social Experiment',
-    description: 'Read the terms that govern your use of The Social Experiment.',
+    title: 'Terms of Service | RumbyTCG',
+    description: 'Read the terms that govern your use of RumbyTCG.',
     content: termsOfService
   },
   '/tos': {
-    title: 'Terms of Service | The Social Experiment',
-    description: 'Read the terms that govern your use of The Social Experiment.',
+    title: 'Terms of Service | RumbyTCG',
+    description: 'Read the terms that govern your use of RumbyTCG.',
     content: termsOfService
   }
 }
