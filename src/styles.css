@@ -197,10 +197,10 @@ main, section, section > * { min-width: 0; }
 .legal-document h2 { display: grid; grid-template-columns: 52px 1fr; gap: 18px; align-items: start; margin-bottom: 28px; font-size: clamp(25px, 3vw, 34px); line-height: 1.12; letter-spacing: -.025em; }
 .legal-document h2 span { padding-top: 5px; color: var(--tertiary); font-size: 10px; letter-spacing: .12em; }
 .legal-document h3 { margin: 32px 0 10px 70px; text-transform: uppercase; font-size: 11px; letter-spacing: .12em; }
-.legal-document section > p, .legal-document section > ul, .legal-document section > address { margin-left: 70px; }
+.legal-document section > p, .legal-document section > ul, .legal-document section > ol, .legal-document section > address { margin-left: 70px; }
 .legal-document section > p, .legal-document li, .legal-document address { color: #aaa; font-size: 15px; line-height: 26px; }
 .legal-document section > p + p { margin-top: 16px; }
-.legal-document ul { padding-left: 20px; }
+.legal-document ul, .legal-document ol { padding-left: 20px; }
 .legal-document li { padding-left: 6px; }
 .legal-document li + li { margin-top: 9px; }
 .legal-document strong { color: var(--white); }
@@ -271,7 +271,7 @@ main, section, section > * { min-width: 0; }
   .legal-document section { padding: 42px 0; }
   .legal-document h2 { grid-template-columns: 38px 1fr; gap: 10px; }
   .legal-document h2 span { padding-top: 4px; }
-  .legal-document h3, .legal-document section > p, .legal-document section > ul, .legal-document section > address { margin-left: 48px; }
+  .legal-document h3, .legal-document section > p, .legal-document section > ul, .legal-document section > ol, .legal-document section > address { margin-left: 48px; }
   .legal-document section > p, .legal-document li, .legal-document address { font-size: 14px; line-height: 24px; }
 }
 
@@ -285,7 +285,7 @@ main, section, section > * { min-width: 0; }
   .card-grid { gap: 8px; }
   .collection-preview { padding: 14px; }
   .legal-document h2 { grid-template-columns: 1fr; gap: 8px; }
-  .legal-document h3, .legal-document section > p, .legal-document section > ul, .legal-document section > address { margin-left: 0; }
+  .legal-document h3, .legal-document section > p, .legal-document section > ul, .legal-document section > ol, .legal-document section > address { margin-left: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
