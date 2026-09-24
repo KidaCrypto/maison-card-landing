@@ -30,7 +30,7 @@ const icon = (name) => {
 document.querySelector('#app').innerHTML = `
   <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="PlayKami home"><img src="/assets/playkami-logo.svg" alt="PlayKami" /></a>
+      <a class="brand" href="#top" aria-label="The Social Experiment home"><span class="brand__name">The Social<br />Experiment</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span class="sr-only">Open navigation</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="#how">How it works</a>
@@ -43,7 +43,7 @@ document.querySelector('#app').innerHTML = `
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span>PlayKami for iPhone</p>
+          <p class="eyebrow"><span></span>The Social Experiment for iPhone</p>
           <h1 id="hero-title">Open packs.<br />Find your grail.</h1>
           <p class="hero-intro">Pick a card pack, rip the foil, and reveal five collectible cards. Every pull joins your collection.</p>
           <div class="hero-actions">
@@ -52,9 +52,9 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
 
-        <div class="app-preview" aria-label="PlayKami pack screen preview">
+        <div class="app-preview" aria-label="The Social Experiment pack screen preview">
           <div class="app-topbar">
-            <img src="/assets/playkami-mark.svg" alt="" aria-hidden="true" />
+            <img src="/assets/social-experiment-mark.svg" alt="" aria-hidden="true" />
             <span class="balance"><b>$</b>$247.00</span>
             <span class="profile" aria-hidden="true"></span>
           </div>
@@ -93,12 +93,12 @@ document.querySelector('#app').innerHTML = `
         <div class="section-heading">
           <p class="eyebrow"><span></span>How it works</p>
           <h2 id="how-title">The best part of collecting,<br />right from the start.</h2>
-          <p>PlayKami is built around the pack-opening loop. Choose your tier, make the rip, and see what joins your collection.</p>
+          <p>The Social Experiment is built around the pack-opening loop. Choose your tier, make the rip, and see what joins your collection.</p>
         </div>
         <ol class="feature-grid">
           <li>${icon('cards')}<span>01</span><h3>Choose a pack</h3><p>Select Pokémon or One Piece, then browse six tiers from Basic to Diamond.</p></li>
           <li>${icon('tear')}<span>02</span><h3>Rip the foil</h3><p>Drag across the pack and move through a focused, tactile card reveal.</p></li>
-          <li>${icon('grid')}<span>03</span><h3>Keep every pull</h3><p>Your five revealed cards are saved together in your PlayKami collection.</p></li>
+          <li>${icon('grid')}<span>03</span><h3>Keep every pull</h3><p>Your five revealed cards are saved together in your The Social Experiment collection.</p></li>
         </ol>
       </section>
 
@@ -138,10 +138,9 @@ document.querySelector('#app').innerHTML = `
           <ul>
             <li>${icon('grid')}<div><strong>Collection view</strong><span>All your revealed cards in one place.</span></div></li>
             <li>${icon('cards')}<div><strong>Card details</strong><span>Artwork, rarity, grade, and preview value.</span></div></li>
-            <li>${icon('store')}<div><strong>Demo marketplace</strong><span>Explore clearly labeled simulated activity.</span></div></li>
           </ul>
         </div>
-        <div class="collection-preview" aria-label="PlayKami collection preview">
+        <div class="collection-preview" aria-label="The Social Experiment collection preview">
           <div class="collection-header"><h3>Collection</h3><span>12 cards</span></div>
           <div class="filter-chips"><span class="active">All</span><span>Pokémon</span><span>One Piece</span></div>
           <div class="card-grid">
@@ -154,16 +153,16 @@ document.querySelector('#app').innerHTML = `
       </section>
 
       <section class="final-cta" aria-labelledby="cta-title">
-        <img src="/assets/playkami-mark.svg" alt="" aria-hidden="true" />
-        <div><p class="eyebrow"><span></span>PlayKami for iPhone</p><h2 id="cta-title">Your next pull<br />starts here.</h2></div>
-        ${cta('Get PlayKami')}
+        <img src="/assets/social-experiment-mark.svg" alt="" aria-hidden="true" />
+        <div><p class="eyebrow"><span></span>The Social Experiment for iPhone</p><h2 id="cta-title">Your next pull<br />starts here.</h2></div>
+        ${cta('Get The Social Experiment')}
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-main">
         <div class="footer-brand">
-          <a class="brand brand--footer" href="#top"><img src="/assets/playkami-logo.svg" alt="PlayKami" /></a>
+          <a class="brand brand--footer" href="#top"><span class="brand__name">The Social<br />Experiment</span></a>
           <p>Open packs. Find your grail.</p>
         </div>
         <nav class="footer-sitemap" aria-label="Footer sitemap">
@@ -180,11 +179,11 @@ document.querySelector('#app').innerHTML = `
         </nav>
         <address class="footer-address">
           <strong>Company address</strong>
-          <span>8 The Green, Suite R<br />Dover, DE 19901<br />United States</span>
+          <span>The Social Experiment LLC<br />8 The Green, Suite R<br />Dover, DE 19901<br />United States</span>
         </address>
       </div>
       <div class="footer-bottom">
-        <p>© ${new Date().getFullYear()} PlayKami. All rights reserved.</p>
+        <p>© ${new Date().getFullYear()} The Social Experiment. All rights reserved.</p>
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 const legalHeader = () => `
   <header class="site-header legal-header">
-    <a class="brand" href="/" aria-label="PlayKami home"><img src="/assets/playkami-logo.svg" alt="PlayKami" /></a>
+    <a class="brand" href="/" aria-label="The Social Experiment home"><span class="brand__name">The Social<br />Experiment</span></a>
     <a class="legal-header__back" href="/">Back to home <span aria-hidden="true">→</span></a>
   </header>`
 
@@ -8,7 +8,7 @@ const legalFooter = () => `
   <footer class="site-footer legal-footer">
     <div class="footer-main">
       <div class="footer-brand">
-        <a class="brand brand--footer" href="/"><img src="/assets/playkami-logo.svg" alt="PlayKami" /></a>
+        <a class="brand brand--footer" href="/"><span class="brand__name">The Social<br />Experiment</span></a>
         <p>Open packs. Find your grail.</p>
       </div>
       <nav class="footer-sitemap" aria-label="Legal pages">
@@ -20,11 +20,11 @@ const legalFooter = () => `
       </nav>
       <address class="footer-address">
         <strong>Company address</strong>
-        <span>Kami Tech LLC<br />8 The Green, Suite R<br />Dover, DE 19901<br />United States</span>
+        <span>The Social Experiment LLC<br />8 The Green, Suite R<br />Dover, DE 19901<br />United States</span>
       </address>
     </div>
     <div class="footer-bottom">
-      <p>© ${new Date().getFullYear()} PlayKami. All rights reserved.</p>
+      <p>© ${new Date().getFullYear()} The Social Experiment. All rights reserved.</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>`
@@ -32,120 +32,44 @@ const legalFooter = () => `
 const privacyPolicy = `
   <p class="legal-kicker">Legal · Privacy</p>
   <h1>PRIVACY POLICY</h1>
-  <p class="legal-updated">Last updated: November 30, 2025</p>
+  <p class="legal-updated">Last updated: September 24, 2026</p>
 
   <section>
-<h2><span>01</span> Introduction</h2>
-<p>This Privacy Policy describes how <strong>Kami Tech LLC (“Kami Tech”, “PlayKami”, “we”, “us”, or “our”)</strong> collects, uses, stores, and shares information when you use our website <a href="https://playkami.io">https://playkami.io</a> and any related services (collectively, the <strong>&quot;Service&quot;</strong>).
-By accessing or using the Service, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, you should not use the Service.
-If you have any questions about this Privacy Policy or our data practices, you can contact us at:</p>
-<p>Email: <a href="mailto:contact@playkami.io">contact@playkami.io</a></p>
+    <h2><span>01</span> Introduction</h2>
+<p>This Privacy Policy describes how <strong>The Social Experiment LLC (“The Social Experiment”, “we”, “us”, or “our”)</strong> collects, uses, stores, and shares information when you use <a href="https://rumbycollectibles.io">rumbycollectibles.io</a>, our mobile application, and related services (collectively, the <strong>“Service”</strong>).</p>
+<p>The Service includes collectible packs and draws, account collections, buybacks, physical item redemption and shipping, promotions, and eligible balance withdrawals. We use Clerk for user authentication and Stripe for payment processing and Stripe Connect payouts.</p>
+<p>This policy explains our data practices; where consent is required, we will request it separately. For questions or privacy requests, email <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a>.</p>
   </section>
 
   <section>
-<h2><span>02</span> Information We Collect</h2>
-<p>We may collect the following types of information when you use the Service:</p>
-<h3>2.1 Information You Provide Directly</h3>
-<p>This may include:</p>
-<ul>
-<li>Account details such as username, email address, and password.</li>
-<li>Profile information or other details you choose to share.</li>
-<li>Communication content when you contact us (e.g., support requests, feedback).</li>
-<li>Payment-related information, if and when you make purchases through the Service (note: payment card details are typically processed by third-party payment processors, not directly by us).</li>
-</ul>
-<h3>2.2 Information Collected Automatically</h3>
-<p>When you access or use the Service, we may automatically collect:</p>
-<ul>
-<li><strong>Usage data</strong>: pages viewed, features used, time and date of visits, referring/exit pages, clicks, and other interaction data.</li>
-<li><strong>Device and technical data</strong>: IP address, browser type and version, device type, operating system, language settings, and similar technical information.</li>
-</ul>
-<h3>2.3 Cookies and Similar Technologies</h3>
-<p>We and our third-party service providers may use cookies, web beacons, pixels, and similar technologies to:</p>
-<ul>
-<li>Recognize you when you return to the Service.</li>
-<li>Keep you logged in.</li>
-<li>Analyze traffic and usage patterns.</li>
-<li>Improve features and performance.
-You can usually set your browser to refuse cookies or indicate when a cookie is being sent. If you disable cookies, some parts of the Service may not function properly.</li>
-</ul>
+    <h2><span>02</span> Information We Collect</h2>
+<h3>2.1 Account and authentication information</h3>
+<p>Clerk manages sign-in and authentication for the Service. We receive an account identifier, email address, email verification status, and name or username from Clerk, and use authentication session information to recognize your account and protect access. Clerk processes the credentials and verification information required by the sign-in method you choose. Our application backend verifies Clerk-issued sessions rather than storing your sign-in password.</p>
+<p>We also collect profile details, referral information, notification and privacy preferences, support requests, feedback, and other information you choose to provide.</p>
+<h3>2.2 Purchases, balances, and activity</h3>
+<p>We keep records of balance top-ups, purchases, pack openings and draw results, item ownership and buybacks, points, promotions, refunds, payment disputes, and withdrawal requests. These records may include amounts, currencies, dates, transaction identifiers, status information, and records used to verify draw results or investigate errors.</p>
+<h3>2.3 Payments and payouts</h3>
+<p>Stripe processes payment details. We receive transaction references, amounts, currencies, payment method type, and payment, refund, or dispute status. We do not store full payment card numbers or card security codes in our application backend.</p>
+<p>If you request a withdrawal, Stripe Connect collects the information required to set up and verify your payout account, which may include identity, tax, and bank details. We receive the connected account identifier, payout eligibility and verification requirement status, and transfer and payout records. Information you submit directly to Stripe is also handled under <a href="https://stripe.com/privacy">Stripe’s Privacy Policy</a>.</p>
+<h3>2.4 Shipping information</h3>
+<p>For physical item redemptions, we collect the recipient and delivery details you provide, including name, shipping address, and contact details, together with shipping charges, courier information, and tracking and fulfillment records.</p>
+<h3>2.5 Information collected automatically</h3>
+<p>We and our service providers may collect usage and technical information such as pages or features used, interaction times, IP address, browser and device information, operating system, language, referring pages, session information, and security or error logs.</p>
+<h3>2.6 Cookies and similar technologies</h3>
+<p>We and our service providers, including Clerk and Stripe, may use cookies, local storage, and similar technologies for sign-in, session management, payment functionality, fraud prevention, preferences, and performance. Where required, we obtain consent for non-essential technologies. You can control cookies through your browser, although disabling essential technologies may prevent sign-in, payments, or other features from working.</p>
   </section>
 
   <section>
-<h2><span>03</span> How We Use Your Information</h2>
-<p>We use the information we collect for purposes including:</p>
+    <h2><span>03</span> How We Use Your Information</h2>
+<p>We use information to:</p>
 <ul>
-<li>
-<p>Providing and maintaining the Service</p>
-</li>
-<li>
-<ul>
-<li>Operating the website and game features.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Creating and managing your account.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Processing transactions and providing customer support.</li>
-</ul>
-</li>
-<li>
-<p>Improving and developing the Service</p>
-</li>
-<li>
-<ul>
-<li>Monitoring performance and usage.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Debugging, testing, and enhancing existing features.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Developing new features, content, or services.</li>
-</ul>
-</li>
-<li>
-<p>Communication</p>
-</li>
-<li>
-<ul>
-<li>Sending important notices related to your account or the Service (e.g., security alerts, changes to terms or policies).</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Responding to your requests, questions, and feedback.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Sending optional marketing or promotional communications, if permitted by law and your preferences (you can opt out at any time).</li>
-</ul>
-</li>
-<li>
-<p>Security and enforcement</p>
-</li>
-<li>
-<ul>
-<li>Detecting, preventing, and addressing fraud, abuse, security incidents, or other harmful activity.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Enforcing our Terms of Service and other agreements.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Complying with legal obligations.</li>
-</ul>
-</li>
+<li>Create and manage accounts, authenticate users through Clerk, and protect sessions.</li>
+<li>Operate packs and draws, maintain collections and ownership records, and process buybacks, points, and promotions.</li>
+<li>Process Stripe payments, reconcile balances, manage refunds and disputes, and facilitate eligible Stripe Connect withdrawals.</li>
+<li>Arrange physical redemptions, delivery, tracking, and customer support.</li>
+<li>Maintain transaction and draw-verification records, diagnose errors, and improve the Service.</li>
+<li>Send account, security, transaction, shipping, and policy notices, and optional marketing communications where permitted.</li>
+<li>Detect fraud, abuse, and unauthorized activity, enforce our agreements, resolve disputes, and meet legal, accounting, and tax obligations.</li>
 </ul>
   </section>
 
@@ -161,26 +85,18 @@ You can usually set your browser to refuse cookies or indicate when a cookie is 
   </section>
 
   <section>
-<h2><span>05</span> How We Share Information</h2>
-<p>We do <strong>not</strong> sell your personal information. We may share information in these situations:</p>
-<h3>5.1 Service Providers</h3>
-<p>We may share information with third-party vendors and service providers who perform services on our behalf, such as:</p>
-<ul>
-<li>Hosting and cloud infrastructure</li>
-<li>Analytics and crash reporting</li>
-<li>Payment processors</li>
-<li>Email delivery and customer support tools</li>
-</ul>
-<p>These providers are only permitted to use your information as necessary to provide services to us and are required to protect it in a manner consistent with this Privacy Policy.</p>
-<h3>5.2 Legal and Safety</h3>
-<p>We may disclose information if we believe in good faith that such action is necessary to:</p>
-<ul>
-<li>Comply with a law, regulation, legal process, or government request.</li>
-<li>Protect the rights, property, or safety of Kami Tech LLC, our users, or others.</li>
-<li>Detect, prevent, or otherwise address fraud, security, or technical issues.</li>
-</ul>
-<h3>5.3 Business Transfers</h3>
-<p>If we are involved in a merger, acquisition, asset sale, restructuring, or similar transaction, your information may be transferred as part of that transaction. We will use reasonable efforts to ensure that any new entity continues to protect your information consistent with this Privacy Policy.</p>
+    <h2><span>05</span> How We Share Information</h2>
+<p>We do not sell your personal information. We may share information as follows:</p>
+<h3>5.1 Authentication, payments, and service providers</h3>
+<p><strong>Clerk:</strong> We use Clerk to manage user authentication and accounts. Clerk processes authentication and account data on our behalf under our service agreement. Information about Clerk’s data processing is available in its <a href="https://clerk.com/legal/dpa">Data Processing Addendum</a>; Clerk’s own website and business activities are described in its <a href="https://clerk.com/legal/privacy">Privacy Policy</a>.</p>
+<p><strong>Stripe:</strong> We share payment and transaction information with Stripe to process payments, refunds, disputes, and eligible payouts through Stripe Connect. Stripe may also process information for its own fraud prevention and legal compliance purposes, as described in <a href="https://stripe.com/privacy">Stripe’s Privacy Policy</a>.</p>
+<p>We share the information needed to fulfill physical redemptions with shipping and fulfillment providers. We may also use hosting, communications, analytics, and support providers. Providers processing data on our behalf must protect it and use it in accordance with their agreements and applicable law.</p>
+<h3>5.2 Other users and public features</h3>
+<p>Profile details, activity, collections, and information you publish may be visible to others according to the feature and your privacy settings.</p>
+<h3>5.3 Legal and safety</h3>
+<p>We may disclose information when reasonably necessary to comply with law or legal process, enforce our agreements, investigate fraud or security incidents, or protect the rights, property, or safety of The Social Experiment, our users, or others.</p>
+<h3>5.4 Business transfers and your instructions</h3>
+<p>Information may be transferred in connection with a merger, acquisition, restructuring, or sale of assets, subject to applicable data protection requirements. We may also share information at your direction or with your consent.</p>
   </section>
 
   <section>
@@ -190,16 +106,9 @@ Where required by law, we will take reasonable steps to ensure that appropriate 
   </section>
 
   <section>
-<h2><span>07</span> Data Retention</h2>
-<p>We retain personal information for as long as necessary to:</p>
-<ul>
-<li>Provide and maintain the Service;</li>
-<li>Fulfill the purposes described in this Privacy Policy;</li>
-<li>Comply with legal obligations;</li>
-<li>Resolve disputes;</li>
-<li>Enforce our agreements.</li>
-</ul>
-<p>When data is no longer needed, we will delete it or anonymize it so it can no longer be associated with you.</p>
+    <h2><span>07</span> Data Retention</h2>
+<p>We retain information for as long as needed to provide the Service, maintain ownership and transaction records, resolve disputes, prevent fraud, and meet legal, accounting, tax, and recordkeeping obligations. Retention depends on the type of information and purpose; closing an account does not necessarily remove records of completed transactions, outstanding balances, shipments, payment disputes, or payouts.</p>
+<p>When information is no longer needed, we delete or anonymize it, subject to applicable recordkeeping and backup requirements. Clerk and Stripe may retain information under their applicable agreements and legal obligations, including where Stripe processes data for its own purposes.</p>
   </section>
 
   <section>
@@ -219,17 +128,18 @@ However, no method of transmission over the internet or method of electronic sto
 <li><strong>Objection</strong>: Object to certain types of processing, including direct marketing.</li>
 <li><strong>Portability</strong>: Request a copy of your data in a structured, commonly used, and machine-readable format, where technically feasible.</li>
 </ul>
-<p>To exercise any of these rights (where applicable), contact us at contact@playkami.io. We may ask you to verify your identity before responding to your request, and we will respond within the time period required by applicable law.
+<p>To exercise any of these rights (where applicable), contact us at <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a>. You may also request account deletion through this contact address. Uninstalling the app does not delete your account or the records we hold. We may ask you to verify your identity before responding to your request, and we will respond within the time period required by applicable law.
 You may also:</p>
 <ul>
 <li>Opt out of marketing emails at any time by using the “unsubscribe” link in those emails or contacting us directly.</li>
 </ul>
+<p>You can manage available profile, collection visibility, and notification preferences in your account. Opting out of marketing does not stop necessary account, payment, shipping, security, or legal notices.</p>
+<p>Where applicable law permits, you may use an authorized agent to make a privacy request. We may ask for evidence of their authority. You may appeal a decision about your request by contacting us, and you may complain to the relevant data protection authority. Where processing depends on consent, you may withdraw it without affecting earlier lawful processing.</p>
   </section>
 
   <section>
 <h2><span>10</span> Children’s Privacy</h2>
-<p>The Service is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe that a child under 13 has provided us with personal information, please contact us at contact@playkami.io, and we will take steps to delete such information as required by law.
-If you are located in a region with a higher age of consent for data collection, we comply with applicable requirements in that region.</p>
+<p>The Service is intended for people aged 18 or older, subject to any higher age requirement in our Terms. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information or someone under 18 is using the Service, contact <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a> so we can investigate and take appropriate action.</p>
   </section>
 
   <section>
@@ -240,167 +150,123 @@ If you are located in a region with a higher age of consent for data collection,
   <section>
 <h2><span>12</span> Changes to This Privacy Policy</h2>
 <p>We may update this Privacy Policy from time to time. When we do, we will revise the “Last updated” date at the top of this page. In some cases, we may provide additional notice (such as a banner on the site or email notification).
-Your continued use of the Service after any changes are posted will signify your acceptance of the updated Privacy Policy.</p>
+Where required, we will obtain your consent before applying changes that require it.</p>
   </section>
 
   <section>
 <h2><span>13</span> Contact Us</h2>
 <p>If you have any questions, concerns, or complaints about this Privacy Policy or our data practices, or if you wish to exercise your rights, you can contact us at:</p>
-<p>Kami Tech LLC</p>
-<p>Email: <a href="mailto://contact@playkami.io">contact@playkami.io</a></p>
+<p>The Social Experiment LLC</p>
+<p>Email: <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a></p>
   </section>`
 
 const termsOfService = `
   <p class="legal-kicker">Legal · Terms</p>
   <h1>TERMS OF SERVICE</h1>
-  <p class="legal-updated">Last Updated: 11/30/2025</p>
+  <p class="legal-updated">Last updated: September 24, 2026</p>
   <div class="legal-intro">
-<p>These Terms of Service (the &quot;<strong>Terms</strong>&quot;) constitute a legally binding agreement between you (the &quot;User&quot;) and Kami Tech, LLC., a Delaware limited liability company (&quot;<strong>Playkami</strong>”), governing your access to and use of our services (as defined below). Certain services or elements of the Service, including any Playkami NFT (as defined below) or any Playkami profile hosted on social media platforms (e.g., Facebook, X, Discord, or Instagram), may be subject to additional or supplemental terms as set forth herein or in connection with such services (&quot;<strong>Supplemental Terms</strong>&quot;). Together with these Terms, the Supplemental Terms constitute the &quot;<strong>Agreement.</strong>&quot; In the event of any conflict, the Supplemental Terms shall control with respect to the applicable Service.</p>
-<p><strong>IMPORTANT – PLEASE READ CAREFULLY</strong>: By browsing our website at <a href="https://playkami.io">https://playkami.io</a> (the &quot;<strong>Website</strong>&quot;), offering for sale or selling an Asset (as defined below), participating in the minting, purchase, acquisition, or sale of a Playkami NFT (either directly from us or through a Secondary Sale), making a Third-Party Purchase, storing or redeeming an Asset, participating in Playkami&#x27;s Discord server or other social media channels, or using any of our other services (collectively, the &quot;Service&quot;), you expressly acknowledge that you have read, understand, and agree to be bound by this Agreement. If you do not agree to these terms, you must not access or use the Website or any Service, including purchasing any Playkami NFT or offering for sale, selling, storing, or redeeming any Asset.</p>
-<p><strong>THE SERVICE INCLUDES A MARKETPLACE THAT ALLOWS SELLERS (AS DEFINED HEREIN) TO OFFER AND SELL ASSETS AND PLAYKAMI NFTS TO BUYERS, AND BUYERS TO OFFER AND PURCHASE ASSETS AND PLAYKAMI NFTS FROM SELLERS. ALL ASSETS AVAILABLE THROUGH THE MARKETPLACE ARE FURNISHED BY OR ON BEHALF OF SELLERS. EXCEPT WHERE PLAYKAMI IS THE SELLER, WE SHALL NOT BE A PARTY TO, NOR HAVE ANY RESPONSIBILITY OR LIABILITY FOR, ANY DISPUTES BETWEEN YOU AND ANY SELLER REGARDING ANY ASSET.</strong></p>
-<p><strong>These Terms contain a dispute resolution and arbitration provision (See Section 27). Please be aware that unless you opt out, (1) you may only pursue claims against us on an individual basis, not as a plaintiff or class member in any class or representative action; and (2) you agree to mandatory individual arbitration and waive your right to jury trial.</strong></p>
-  </div>
+<p>These Terms of Service (the <strong>“Terms”</strong>) are a legally binding agreement between you and <strong>The Social Experiment LLC</strong>, a limited liability company (<strong>“The Social Experiment”, “we”, “us”, or “our”</strong>), governing your use of our website, mobile application, and related services (the <strong>“Service”</strong>). Supplemental terms presented for a particular feature form part of this agreement and control for that feature if they conflict with these Terms.</p>
+<p>By accessing or using the Service, including buying packs, participating in draws, requesting buybacks or shipping, or funding or withdrawing eligible balances, you agree to these Terms. Please also read our <a href="/privacy-policy">Privacy Policy</a>. If you do not agree to these Terms, do not use the Service.</p>
+<p><strong>Section 26 contains an individual arbitration agreement and class-action waiver, including a 30-day right to opt out. Please read it carefully.</strong></p>
+</div>
 
   <section>
 <h2><span>01</span> Modification</h2>
-<p>Playkami reserves the right to modify this Agreement at any time in our sole discretion. If we make changes, we will provide notice by email, through the Service, or by updating the &quot;Last Updated&quot; date above. Your continued use of the Service after such changes constitutes acceptance of the revised Terms. We encourage you to review this Agreement frequently. If you do not agree to any revised terms, you must discontinue using the Service.</p>
+<p>The Social Experiment reserves the right to modify this Agreement at any time in our sole discretion. If we make changes, we will provide notice by email, through the Service, or by updating the &quot;Last Updated&quot; date above. Your continued use of the Service after such changes constitutes acceptance of the revised Terms. We encourage you to review this Agreement frequently. If you do not agree to any revised terms, you must discontinue using the Service.</p>
   </section>
 
   <section>
 <h2><span>02</span> Privacy</h2>
-<p>Please refer to our Privacy Policy at https://playkami.io/privacy-policy for information about how we collect, use, and share your personal information. By submitting data through the Service, you consent to the collection, use, and disclosure of your personal data in accordance with the Privacy Policy.</p>
+<p>Please refer to our Privacy Policy at <a href="https://rumbycollectibles.io/privacy-policy">https://rumbycollectibles.io/privacy-policy</a> for information about how we collect, use, and share your personal information. By submitting data through the Service, you consent to the collection, use, and disclosure of your personal data in accordance with the Privacy Policy.</p>
   </section>
 
   <section>
-<h2><span>03</span> The Service</h2>
-<p>From time to time, original NFTs (each, a &quot;<strong>Playkami NFT</strong>&quot;) will be made available for purchase through our Website. Each Playkami NFT represents a certain individual asset as depicted in or otherwise corresponding to the artwork or listing information embodied by such Playkami NFT (the &quot;<strong>Asset</strong>&quot;). Each Asset is owned by the individual or entity offering it for sale (the &quot;<strong>Seller</strong>&quot;). When an individual (the &quot;<strong>Initial Seller</strong>&quot;) desires to offer an Asset for sale, the Initial Seller may use the Service to offer a Playkami NFT depicting such Asset. Ownership of an Asset transfers upon sale of the corresponding Playkami NFT from the Seller to the buyer (the &quot;<strong>Buyer</strong>&quot;).</p>
+    <h2><span>03</span> The Service</h2>
+<p>The Social Experiment provides collectible purchasing and collection features, including randomized packs and draws, buybacks, and physical redemption and shipping. Features depend on availability, location, account eligibility, and the rules shown in the Service.</p>
+<p>An <strong>“Item”</strong> is a collectible recorded in your account, including a physical collectible held for fulfillment where indicated. Item ownership, transactions, and balances are recorded in our account system. The item description identifies what you acquire and whether it is eligible for physical delivery. Acquiring an Item does not grant intellectual property rights in its artwork, brand, or other protected content.</p>
   </section>
 
   <section>
-<h2><span>04</span> Wallets</h2>
-<p>To access certain features of the Service, including purchasing Playkami NFTs, you must connect a software-based digital wallet that allows you to purchase, store, and transact using cryptocurrency and non-fungible tokens (your &quot;<strong>Wallet</strong>&quot;). Transactions initiated through our Service are effected by third-party digital wallet extensions, and by using our Service, you agree that such transactions are governed by the terms and privacy policies of those extensions.</p>
-<p>You acknowledge that certain information, including your Wallet&#x27;s public address and transactions, may be publicly viewable on the applicable blockchain. Playkami does not own, operate, or control any blockchain or Wallet. We are not an agent or intermediary of any User and do not store or control any Playkami NFTs, private keys, passwords, or other User property. Playkami cannot perform transactions or send messages on behalf of any User. All transactions are effected and recorded solely through User interactions with the respective blockchain, which is not under our control.</p>
+    <h2><span>04</span> Accounts and Clerk Authentication</h2>
+<p>You access your account through Clerk, our authentication provider, using an available sign-in method. Provide accurate information, maintain access to your sign-in method, protect your credentials and devices, and promptly report suspected unauthorized access to <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a>.</p>
+<p>You are responsible for activity you authorize through your account. You may not sell, rent, or share account access, impersonate another person, use another person’s credentials, or bypass account restrictions. Account recovery and verification may require completion of the security steps presented through Clerk.</p>
+<p><strong>Account closure:</strong> To request closure, email <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a>. Before closing, arrange eligible withdrawals and delivery or eligible buybacks of remaining Items. Outstanding transactions, disputes, and legally required records may need to be resolved or retained. A closure request does not itself waive your rights to balances or Items.</p>
   </section>
 
   <section>
-<h2><span>05</span> Purchase and Sales of Playkami NFTs</h2>
-<p>All pricing and payment terms for Playkami NFTs are as indicated at point of sale. Payment obligations are binding at the time of purchase. You may not substitute any other currency for the currency contracted at purchase. No currency fluctuation shall impact or excuse your payment obligations.</p>
-<p>We do not guarantee that Playkami NFTs will be available for purchase when you seek to purchase one.</p>
-<p>When you purchase a Playkami NFT from an Initial Seller on our Website, the NFT is minted directly into your connected Wallet. When you purchase from a subsequent Seller, the NFT transfers directly from the Seller to you. Except where Playkami is the Buyer or Seller, we do not hold custody of any Playkami NFT. Playkami NFTs may be transferred between Wallets on the Monad network.</p>
-<p>You are responsible for ensuring your Wallet has sufficient funds to cover the full purchase cost, including: (i) transaction fees imposed by third-party payment processors, (ii) any Taxes (as defined below), and (iii) Gas Fees. &quot;Gas Fees&quot; are fees for computing energy required to process and validate blockchain transactions, which fluctuate with market conditions. Playkami does not receive and has no authority over Gas Fees.</p>
-<p>Payments made through the Website are effectuated through the underlying blockchain. We have no control over or ability to reverse these payments. Playkami may add or change payment processing services at any time, subject to additional terms. Accepted cryptocurrencies are subject to change at our discretion. You acknowledge that Playkami has no liability for claims or damages arising from payment failures, including processing errors on the blockchain or bridge extension. You are solely responsible for confirming payment acceptance.</p>
-<p>For purchase issues, please contact us at support@playkami.io. We will resolve issues in accordance with our then-current policies.</p>
-<p>You are solely responsible for determining and paying all sales, use, value-added, and other taxes, duties, and assessments (excluding taxes on our net income) now or hereafter imposed by any governmental authority in connection with your use of the Website or transactions involving Playkami NFTs (collectively, &quot;<strong>Taxes</strong>&quot;). You will pay or reimburse us for all applicable Taxes and will not deduct such amounts from any payments, including Gas Fees.</p>
-<p>When you purchase or acquire a Playkami NFT, you agree to be bound by any applicable terms and conditions, including payment of the Playkami Fee (regardless of whether enforced by the facilitating platform). You further agree to bind any subsequent purchaser to such terms.</p>
-<p>By offering any Asset or Playkami NFT through the Service, you appoint Playkami as your limited payments agent solely for receiving, holding, and settling payments owed to you. Playkami will process and settle payments actually received, less any amounts owed to Playkami (including taxes and fees), subject to this Agreement. Payment received by Playkami on your behalf satisfies the payor&#x27;s obligation to you, regardless of whether Playkami settles such payment. If Playkami fails to settle any payment, your recourse is solely against Playkami, not the payor.</p>
+    <h2><span>05</span> Payments, Balances, and Stripe</h2>
+<p>Payments are processed through Stripe using the methods made available at checkout, which may include payment cards, Apple Pay, and Google Pay. Prices, currencies, applicable fees, and taxes are shown with the relevant transaction. You authorize the charge you confirm and must use a payment method you are entitled to use.</p>
+<p>A balance top-up becomes available after payment confirmation. Your account may separately record funded balances, earned buyback proceeds, pending amounts, and promotional points. Spending availability and withdrawal eligibility can differ. Points are governed by Section 11; cash withdrawals are governed by Section 8.</p>
+<p>Payments may require additional authentication or review. Failed, refunded, disputed, or reversed payments may result in corresponding balance adjustments, transaction restrictions, or recovery of amounts owed, subject to applicable law. Contact us about errors or unauthorized charges; nothing in these Terms limits rights you have under applicable payment or consumer law.</p>
+<p>You are responsible for applicable taxes and charges arising from your transactions, except where collection or payment is our legal responsibility. Payment processing does not make Stripe the seller of the collectible.</p>
+<p>Keep copies of transaction confirmations and the terms shown when you purchase, request a buyback, redeem, or withdraw. Include the relevant transaction reference when contacting support about an error.</p>
   </section>
 
   <section>
-<h2><span>06</span> Initial Seller Agreement</h2>
-<p>When an Initial Seller makes an Asset available on the Service, they represent and warrant that: (i) they own the Asset; (ii) they have all necessary rights to make the Asset available and mint a corresponding Playkami NFT; (iii) they will not offer the Asset on any other service or marketplace while the corresponding Playkami NFT is available for sale; and (iv) the Asset complies with Playkami&#x27;s Listing Guidelines at https://playkami.io/listing-guidelines.</p>
-<p>On or before the primary sale, the Initial Seller agrees to deliver the corresponding Asset to Playkami for storage. The Initial Seller bears sole responsibility for any loss or damage to the Asset prior to Playkami&#x27;s confirmed receipt.</p>
-<p>Each Initial Seller shall receive a percentage of Net Revenue from the Asset Management Services provided with respect to Assets they originally made available (the &quot;<strong>Initial Seller Revenue Share</strong>&quot;). &quot;Net Revenue&quot; means total consideration received by Playkami as the Playkami Fee (&quot;<strong>Revenue</strong>&quot;), less any fees mutually agreed upon in writing.</p>
-<p>Each Initial Seller must provide Playkami with a supported Wallet address to receive any cryptocurrency Net Revenue. Playkami has no liability arising from Wallet address, payment processor, or banking information errors you provide.</p>
-<p>Playkami reserves the right, but has no obligation, to confirm each Asset&#x27;s provenance and condition. If Playkami reasonably determines that an Asset does not conform with the Initial Seller&#x27;s description or the Listing Guidelines, Playkami may return the Asset at the Initial Seller&#x27;s expense. If a Buyer has purchased a corresponding Playkami NFT, Playkami may cancel or refund such purchase per our then-current policies. Contact us at contact@playkami.io for more information.</p>
-<p>You, not Playkami, are solely responsible for providing Buyer support in connection with Playkami NFTs corresponding to your Assets. While Playkami may elect to provide technical support, we have no obligation to do so.</p>
-<p>In any dispute between you and a third party (including Buyers, Sellers, or payment providers) related to your Playkami NFTs or Assets, Playkami will not be a party. You are solely responsible for dispute resolution and shall have no recourse against Playkami for any such claims.</p>
-<p>Playkami reserves the right to remove any Initial Seller and terminate their ability to offer Assets at any time, with or without notice, upon: (i) reasonable belief that the Initial Seller has breached this Agreement; or (ii) termination of the applicable Service.</p>
+    <h2><span>06</span> Item Storage, Redemption, and Shipping</h2>
+<p>Eligible physical Items may be held for you until you request delivery, accept an eligible buyback offer, or an applicable automatic buyback occurs under Section 7. Your account records the Item and its current status. Any retention deadline associated with an acquisition is shown with its terms.</p>
+<p>To redeem an Item for delivery, you must own it, satisfy applicable eligibility checks, provide accurate recipient and shipping details, and pay the shipping, handling, taxes, and duties applicable to your order. Availability depends on the Item, destination, and supported shipping services. Items involved in another pending transaction may be unavailable for redemption.</p>
+<p>After a redemption request, Items are reserved for fulfillment and cannot also be bought back. Cancellation is available only while the request remains eligible for cancellation. Delivery estimates are estimates; we will provide available tracking information. Promptly contact us about missing, damaged, or incorrect shipments so we can investigate. Your statutory delivery and consumer rights remain unaffected.</p>
   </section>
 
   <section>
-<h2><span>07</span> Asset Management Services</h2>
-<p>Our Asset Management Services include receiving Assets from Initial Sellers, storing Assets on behalf of Playkami NFT owners, listing and relisting Assets as Playkami NFTs, and shipping Assets to owners upon redemption.</p>
-<p>Each Playkami NFT purchase includes a fee payable to Playkami for Asset Management Services (the &quot;<strong>Playkami Fee</strong>&quot;). The Playkami Fee is a percentage of the total purchase price, deducted from the Buyer&#x27;s payment and remitted to Playkami.</p>
-<p>Playkami represents that all Assets remain in our constructive possession following receipt until transferred to the then-current Playkami NFT owner. We use good faith efforts to maintain each Asset&#x27;s integrity through partnerships with best-in-class storage and shipping providers. Playkami maintains insurance covering Assets at fair market value. Notwithstanding the foregoing, Playkami shall not be liable for any loss, damage, or destruction except to the extent arising from our gross negligence or willful misconduct.</p>
-<p>When you sell a Playkami NFT, you represent and warrant that you have no outstanding liabilities with respect to Asset Management Services, and you acknowledge that you shall assign to the Buyer (who shall assume by novation) your agreement with Playkami for such services (the &quot;<strong>Assumed Contract</strong>&quot;). The Initial Seller Revenue Share remains solely between the Initial Seller and Playkami. Upon sale and receipt of the Playkami Fee, Playkami releases the Seller from the Assumed Contract.</p>
-<p>When you purchase a Playkami NFT, you acknowledge that: (i) the Seller is released from the Assumed Contract; (ii) you assume the Seller&#x27;s rights and obligations under the Assumed Contract by novation; and (iii) you are entering into a binding agreement with Playkami for Asset Management Services. You may terminate the Assumed Contract by: (y) selling the Playkami NFT and assigning the Assumed Contract to the Buyer by novation; or (z) redeeming the Playkami NFT for the underlying Asset.</p>
-<p>After purchasing a Playkami NFT, you may request the associated Asset through the Website. As a precondition to Asset transfer, Playkami shall verify: (i) your identity; (ii) your compliance with this Agreement and eligibility to use the Service; and (iii) your ownership of the Playkami NFT. Upon Asset transfer, the associated Playkami NFT shall be burned.</p>
-<p>Redemption may be subject to additional fees, including Taxes and shipping and handling fees, as determined at Playkami&#x27;s discretion and as set forth on the Service, subject to change.</p>
+    <h2><span>07</span> Buybacks and Inventory Deadlines</h2>
+<p>The Social Experiment may offer to buy back eligible Items. The applicable amount, currency, eligibility, and any deadline are shown in the Service. For eligible pack or draw acquisitions, the buyback amount is based on the valuation and buyback percentage recorded at acquisition, rounded down to the smallest unit of the applicable currency; later catalog valuation changes do not change those recorded terms.</p>
+<p>When a buyback completes, ownership returns to The Social Experiment and the proceeds are credited to your account, subject to any applicable hold or withdrawal restrictions. A buyback is a separate sale of the Item and is not a refund of the pack or draw purchase. Items with no buyback entitlement are not eligible for this acquisition-based buyback.</p>
+<p><strong>Automatic buybacks:</strong> Where an acquisition includes a retention deadline and automatic buyback terms, you authorize The Social Experiment to buy back the eligible Item after that deadline at its recorded buyback amount and credit the proceeds to your account. Review the deadline and redeem or otherwise manage the Item before it expires if you wish to retain it. Items being redeemed are ineligible while in that state; cancelling a redemption after the deadline may make the Item eligible for automatic buyback.</p>
+<p>For bulk buybacks, each Item is evaluated separately. Only successfully completed sales transfer ownership and generate proceeds; the result identifies any failed Items.</p>
   </section>
 
   <section>
-<h2><span>08</span> Third-Party Purchase Service</h2>
-<p>You may be able to purchase NFTs offered by third parties through a Third-Party Purchase enabled by Playkami (the &quot;<strong>Third-Party Purchase Service</strong>&quot;). This enables a third-party offeror (&quot;<strong>Offeror</strong>&quot;) to make original NFTs (each, an &quot;<strong>Offeror NFT</strong>&quot;) available through such Offeror&#x27;s website. Playkami is not the seller or offeror of any Offeror NFT, associated physical assets, or embodied artwork (collectively, &quot;<strong>Offeror Materials</strong>&quot;). Playkami reserves the right, but has no obligation, to review Offeror Materials for authenticity and makes no representations or warranties regarding them. You bear full responsibility for verifying the identity, legitimacy, and authenticity of any Offeror Materials you purchase.</p>
-<p>Any Third-Party Purchase is a contract between the Offeror and you. Playkami acts solely as a service provider to the Offeror and does not transfer legal ownership of any Offeror NFT. Playkami is not a party to any Third-Party Purchase.</p>
-<p>Notwithstanding any conflicting Offeror terms, Playkami has no obligation to facilitate returns or refunds for Third-Party Purchases.</p>
+    <h2><span>08</span> Withdrawals through Stripe Connect</h2>
+<p>Where cash-out is available, eligible balances may be withdrawn through Stripe Connect. You must complete Stripe’s connected account onboarding, provide accurate payout and verification information, and maintain an account eligible to receive payouts. Stripe may request additional identity, tax, or bank information. Availability depends on supported countries, currencies, verification, and account status.</p>
+<p>Your use of connected account services is subject to the applicable <a href="https://stripe.com/legal/connect-account">Stripe Connected Account Agreement</a> and the terms presented during onboarding. You authorize us to share the information necessary to facilitate your requested payouts, as described in our Privacy Policy.</p>
+<p>Only the amount shown as available for withdrawal may be requested. Pending proceeds, reserved funds, promotional points, and amounts subject to disputes or reversals are not available for withdrawal. Funded balances may have different withdrawal eligibility from earned proceeds, as indicated in the Service.</p>
+<p>A withdrawal reserves the requested amount while it is reviewed and processed. Approval, Stripe processing, bank settlement, verification requirements, and payment reversals can affect timing. Submission is not confirmation of payout, and we do not guarantee instant availability. A failed or cancelled request releases reserved funds only after we confirm that the funds have not been paid out or have been recovered.</p>
   </section>
 
   <section>
-<h2><span>09</span> Secondary Marketplace Sales of Playkami NFTs</h2>
-<p>You may sell, trade, or distribute your Playkami NFTs on compatible smart contract-enabled secondary marketplaces, platforms, and exchanges operated by third parties (&quot;<strong>Secondary Marketplaces</strong>&quot;), subject to their terms and functionality. Playkami NFTs may not be compatible with all Secondary Marketplaces, and we make no guarantees about their availability or functionality.</p>
-<p>We are not a party to any Secondary Marketplace transaction (each, a &quot;<strong>Secondary Sale</strong>&quot;), whether or not we receive a commission or fee. We are not liable for any loss in connection with any Secondary Sale. Playkami is not a party to any transaction or dispute between Sellers and Buyers of Playkami NFTs.</p>
-<p>Any Secondary Sale is subject to the Playkami Fee, which may be automatically deducted from the payment. All Playkami Fees apply to the final sale price.</p>
+    <h2><span>09</span> Eligibility and Account Responsibilities</h2>
+<p>You must be at least 18 years old, meet any higher age requirement that applies where you live, and be legally able to enter into this agreement. Use only features that are lawful and available in your location.</p>
+<p>Keep your account, contact, shipping, and payment information accurate and current. We or our providers may request information to verify eligibility, investigate unauthorized activity, prevent fraud, or comply with legal obligations. Transactions or access may be restricted while required information is missing or a review is pending.</p>
+<p>You may not use unauthorized applications to access the Service, evade restrictions, or use an account or payment method without permission. Breaches may lead to suspension or termination subject to applicable law.</p>
   </section>
 
   <section>
-<h2><span>10</span> Contractual Relationship</h2>
-<p>By using this Service, you represent that you are at least eighteen (18) years of age, or that you are of age under the laws of your jurisdiction, and lawfully able to enter into contracts.</p>
-<p>By using the Service, you agree to:</p>
-<ol>
-<li>Provide accurate, current, and complete information as requested;</li>
-<li>Maintain and promptly update such information;</li>
-<li>Maintain your Wallet&#x27;s security and accept all risks of unauthorized access; and</li>
-<li>Immediately notify us of any suspected security breaches.</li>
-</ol>
-<p>You will not buy, sell, rent, or lease access to the Service without our written permission, or access the Service through unauthorized third-party applications.</p>
-<p>Playkami may require additional information and documents from time to time, including at the request of competent authorities or to comply with applicable laws regarding anti-money laundering or counterterrorism financing. We may also require such information if we reasonably believe that:</p>
-<ol>
-<li>Your Wallet is being used for money laundering or illegal activity;</li>
-<li>You have concealed or reported false information; or</li>
-<li>Transactions may have been effected in breach of this Agreement. In such cases, we may pause or cancel your transactions until we have reviewed and accepted the requested information. If you fail to provide complete and accurate information, we may refuse to provide any Playkami NFT, Content, product, service, or further access to the Service.</li>
-</ol>
-<p>Your access to and use of the Service is subject to your continued compliance with these Terms and all applicable laws. If you breach these Terms, your right to access and use the Service will terminate immediately, without any further action by Company, except for those obligations expressly described by the Company in these Terms.</p>
+    <h2><span>10</span> Representations and Warranties</h2>
+<p>You represent that you have authority to enter into and perform this agreement, that the information you provide is accurate, and that your use of the Service and purchase or buyback of Items will not violate law, another person’s rights, or agreements binding on you.</p>
+<p>You may not use the Service if doing so would violate applicable sanctions, export restrictions, or other legal prohibitions. You are responsible for the equipment, internet access, and related charges needed to access the Service.</p>
   </section>
 
   <section>
-<h2><span>11</span> Representations &amp; Warranties</h2>
-<p>When using the Service, you represent and warrant to Playkami, its affiliates, and their representatives as follows:</p>
-<ol>
-<li><strong>Authority</strong>. You have all requisite capacity, power, and authority to enter into and perform your obligations under this Agreement, including minting, selling, or buying Playkami NFTs.</li>
-<li><strong>Due Execution</strong>. This Agreement constitutes your legal, valid, and binding obligation, enforceable against you in accordance with its terms.</li>
-<li><strong>Accuracy of Information</strong>. All information you provide, including your address and tax identification number, is accurate and complete.</li>
-<li><strong>Sanctions</strong>. You are not, and will not authorize use of the Service by, any person: (1) in, under the control of, or a national or resident of any jurisdiction subject to a U.S. trade embargo (currently Cuba, Iran, North Korea, Syria, and the Crimea, Donetsk People&#x27;s Republic, and Luhansk People&#x27;s Republic regions of Ukraine); or (2) identified on any export- or sanctions-related restricted party list, including the U.S. Department of the Treasury&#x27;s Specially Designated Nationals and Blocked Persons List or the U.S. Department of Commerce&#x27;s Denied Persons List, Unverified List, or Entity List.</li>
-<li><strong>Non-Contravention</strong>. This Agreement and your performance hereunder, including minting, listing, buying, or selling Playkami NFTs, will not: (i) if you are an entity, conflict with your charter documents or governing resolutions; (ii) contravene any third-party rights or applicable legal requirements; or (iii) result in any breach of any material contract, permit, or legal requirement applicable to you.</li>
-<li><strong>Independent Investigation and Non-Reliance</strong>. You are sophisticated and experienced in minting or buying NFTs and other crypto assets. You have conducted an independent investigation and formed your own judgment regarding the benefits, risks, and necessary practices related to the Service. You understand that legal requirements pertaining to blockchain technologies and digital assets are uncertain and have independently investigated such requirements and resulting risks, including the possibility that digital assets may constitute securities. You irrevocably disclaim reliance upon any statements, representations, or information made available by Playkami in determining to enter this Agreement or use the Service.</li>
-<li><strong>Litigation</strong>. There is no legal proceeding pending relating to your NFT- or digital asset-trading or blockchain technology-related activities.</li>
-<li><strong>Compliance</strong>. You have not failed to comply with, and have not violated, any applicable legal requirement relating to blockchain technologies. No governmental investigation or review is pending or threatened against you, and no government order prohibits you from engaging in any conduct relating to the Service. You must provide all equipment necessary to connect to the Service, including hardware and software. You are solely responsible for any fees, including internet or mobile fees, incurred when accessing the Service.</li>
-</ol>
-<p>In the event of insolvency, bankruptcy, or cessation of Playkami&#x27;s operations, we have established procedures for returning physical assets to users. Users are responsible for covering shipping costs and associated taxes. The return process must be initiated within three months after such events. We will implement a structured process to identify, segregate, and return assets, and users will receive notification and instructions. Playkami will not offer monetary reimbursement except for facilitating asset returns.</p>
+    <h2><span>11</span> Points and Promotions</h2>
+<p>Points and promotional benefits may be earned or redeemed through the features and rules shown in the Service. Availability, qualifying actions, redemption options, limits, and any expiration are governed by the applicable promotion. Points are separate from your monetary balance, cannot be withdrawn as cash, and may only be used through supported features.</p>
+<p>You may not obtain benefits through false accounts, referral abuse, automation, or other manipulation. We may correct errors or reverse improperly awarded benefits, subject to applicable law. Giveaways and sweepstakes are also subject to Section 28 and their official rules.</p>
   </section>
 
   <section>
-<h2><span>12</span> Auctions</h2>
-<p><strong>Verified Phone Number</strong>. To participate in Playkami auctions, you must have a verified phone number attached to your account.</p>
-<p><strong>Binding Bids</strong>. All bids are binding and final. You are responsible for ensuring sufficient funds before bidding.</p>
-<p><strong>Proof of Funds</strong>. Playkami reserves the right to request proof of funds from any bidder at any time. Acceptable proof includes: proof of USDC in a user-owned wallet, or proof of funds in a user-owned bank account.</p>
-<p><strong>Bid Revocation</strong>. Playkami may revoke any bid from a user unable to provide satisfactory proof of funds.</p>
-<p><strong>Payment and Non-Payment</strong>. Successful bidders must pay within 7 days of auction ending. Failure to pay may result in account suspension and a ban from future Playkami products.</p>
+    <h2><span>12</span> Randomized Packs and Draws</h2>
+<p>Packs and draws, including Oripa boards where offered, award Items from the eligible inventory under the price, selection rules, and odds shown for that feature. Results are random; you cannot choose or guarantee a particular Item. Review the applicable rules before confirming a purchase or using points.</p>
+<p>Completed results are recorded in your account. Where available, draw-verification information allows you to check the recorded result. Inventory and eligibility rules vary by feature; an Item returned through a buyback may become available for a subsequent pack. A board’s rules may exclude Items previously awarded on that board.</p>
+<p>Displayed valuations are estimates and do not guarantee resale value, profit, or recovery of your purchase price. Buyback entitlements, if any, are governed by Section 7.</p>
+<p><strong>Responsible purchasing:</strong> Set a spending budget you can afford and take a break if purchases become difficult to control. Random outcomes do not promise a financial return.</p>
+<p>Once a paid pack is opened or a draw is completed, purchases are final except where a refund or other remedy is required by law or appropriate for a confirmed error. Dissatisfaction with a random result alone does not entitle you to a refund. Contact <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a> for payment, result, or fulfillment errors.</p>
   </section>
 
   <section>
-<h2><span>13</span> Vending Machine</h2>
-<p><strong>Random Card Purchase</strong>. he Vending Machine allow you to purchase digital sealed packs containing random cards at fixed prices. The specific card is determined randomly and cannot be chosen.</p>
-<p><strong>Digital Sealed Packs</strong>. When applicable, sealed packs have opening rules that prevent opening before certain times and allow user-initiated opening until certain times. After the reveal period, Playkami will automatically reveal packs on behalf of owners. Rules may include auto-reveal upon purchase.</p>
-<p><strong>Instant Sale (&quot;Buyback Offer&quot;)</strong>. Upon Vending Machine card purchase, you will receive an offer from Playkami at a percentage of fair market value as advertised. Upon acceptance, you will receive USDC funds in your Playkami wallet/account, usable on the marketplace or website.</p>
-<p><strong>Fair Market Value</strong>. Fair market value is determined solely by Playkami at our discretion and is not subject to negotiation. We do not disclose our valuation methodology.</p>
-<p><strong>Best-Effort Offer</strong>. Buyback offers are best-effort and limited in duration. Playkami makes no guarantee about offer promptness or availability.</p>
-<p><strong>All Sales Final</strong>. All Vending Machine purchases are final and non-refundable. After purchase and pack opening, you may accept a buyback offer, list on the marketplace, transfer to another account, or redeem.</p>
-<p><strong>No Guarantees</strong>. Playkami makes no guarantees regarding the specific card received, fair market value assigned, or buyback offer availability or timing. In cases where a specific card is not attainable, Playkami will reimburse the fair market value that was assigned to it.</p>
+<h2><span>13</span> Consent to Electronic Communication</h2>
+<p>Consent to necessary service notices is separate from optional marketing preferences. Where marketing consent is required, we request it separately, and you can opt out of marketing without closing your account.</p>
+<p>By contacting The Social Experiment via email, social media, or by using the Service, you consent to receive electronic communications from The Social Experiment. These may include notices about your Service use and are part of your relationship with us. You agree that electronic communications satisfy any legal requirements that such communications be in writing. Maintain copies by printing or saving electronic communications. We have no obligation to store such communications for your later use.</p>
   </section>
 
   <section>
-<h2><span>14</span> Consent to Electronic Communication</h2>
-<p>By contacting Playkami via email, social media, or by using the Service, you consent to receive electronic communications from Playkami. These may include notices about your Service use and are part of your relationship with us. You agree that electronic communications satisfy any legal requirements that such communications be in writing. Maintain copies by printing or saving electronic communications. We have no obligation to store such communications for your later use.</p>
+<h2><span>14</span> Our Intellectual Property Rights</h2>
+<p>The Service and all content, features, materials and functionality therein, including the The Social Experiment logo, designs, text, graphics, pictures, information, data, software, sound files, and their selection and arrangement (collectively, &quot;<strong>Content</strong>&quot;), are the proprietary property of The Social Experiment or our affiliates or licensors. You receive no rights to the Service or its Materials except as expressly granted in these Terms and all rights not expressly granted are reserved. Any unauthorized use may violate these Terms and applicable laws.
+You may not use metatags or &quot;hidden text&quot; utilizing &quot;The Social Experiment&quot; or any other name, trademark, or product or service name without permission. The Service&#x27;s look and feel, including page headers, custom graphics, button icons, and scripts, constitute our trade dress and may not be copied or used without permission. All other trademarks, product names, and logos are the property of their respective owners.</p>
   </section>
 
   <section>
-<h2><span>15</span> Our Intellectual Property Rights</h2>
-<p>The Service and all content, features, materials and functionality therein, including the Playkami logo, designs, text, graphics, pictures, information, data, software, sound files, and their selection and arrangement (collectively, &quot;<strong>Content</strong>&quot;), are the proprietary property of Playkami or our affiliates or licensors. You receive no rights to the Service or its Materials except as expressly granted in these Terms and all rights not expressly granted are reserved. Any unauthorized use may violate these Terms and applicable laws.
-You may not use metatags or &quot;hidden text&quot; utilizing &quot;Playkami&quot; or any other name, trademark, or product or service name without permission. The Service&#x27;s look and feel, including page headers, custom graphics, button icons, and scripts, constitute our trade dress and may not be copied or used without permission. All other trademarks, product names, and logos are the property of their respective owners.</p>
-  </section>
-
-  <section>
-<h2><span>16</span> License to Our Service and Content</h2>
+<h2><span>15</span> License to Our Service and Content</h2>
 <p>You are granted a limited, revocable, non-exclusive, non-transferable, non-assignable, non-sublicensable, &quot;as-is&quot; license to access and use the Service and Content for personal, non-commercial use, provided such license does not include any right to:</p>
 <ol>
 <li>Sell, resell, or commercially use the Service or Content;</li>
@@ -408,37 +274,37 @@ You may not use metatags or &quot;hidden text&quot; utilizing &quot;Playkami&quo
 <li>Modify or make derivative uses except as expressly permitted;</li>
 <li>Use data mining, robots, or similar methods;</li>
 <li>Download any portion except as expressly permitted; or</li>
-<li>Use the Service or Content other than for their intended purposes. This license is subject to the Acceptable Use Policy in Section 14.</li>
+<li>Use the Service or Content other than for their intended purposes. This license is subject to the prohibited activities in Section 18.</li>
 </ol>
-<p>You are granted a limited, non-exclusive, non-transferable right to create text hyperlinks to the Service for non-commercial purposes, provided such links do not portray Playkami in a false, misleading, or defamatory manner, and provided the linking site contains no adult, illegal, offensive, or objectionable material. This right may be revoked at any time. You may not use our logo to link to the Service without written permission, nor use framing techniques to enclose any Playkami trademark, logo, proprietary information, images, text, or page layout without written consent.</p>
-<p>Playkami may change or discontinue any aspect of the Service at any time, including by: (i) altering smart contracts pursuant to upgrades, forks, security responses, or chain migrations; (ii) deactivating or deleting Content determined to be abandoned; or (iii) repossessing Playkami NFTs determined to be abandoned or used in violation of this Agreement. In such events, you may no longer be able to access or interact with the Service.</p>
+<p>You are granted a limited, non-exclusive, non-transferable right to create text hyperlinks to the Service for non-commercial purposes, provided such links do not portray The Social Experiment in a false, misleading, or defamatory manner, and provided the linking site contains no adult, illegal, offensive, or objectionable material. This right may be revoked at any time. You may not use our logo to link to the Service without written permission, nor use framing techniques to enclose any The Social Experiment trademark, logo, proprietary information, images, text, or page layout without written consent.</p>
+<p>The Social Experiment may update, suspend, or discontinue features, or restrict access to address security incidents or violations of these Terms, subject to applicable law. Item retention and automatic buybacks are governed by Section 7. Changes to access do not eliminate obligations or rights that survive under these Terms or applicable law.</p>
   </section>
 
   <section>
-<h2><span>17</span> User Content</h2>
+<h2><span>16</span> User Content</h2>
 <p><strong>Definition</strong>. &quot;User Content&quot; means any content, materials, or information that you create, upload, submit, post, transmit, or otherwise make available on or through the Service, including text, images, photographs, videos, audio files, comments, messages, profile information, and any other content or data.</p>
 <p><strong>Responsibility</strong>. You are solely responsible for your User Content and the consequences of posting or publishing it. You acknowledge that User Content you submit may be viewable by other users of the Service and, depending on your privacy settings, the general public.</p>
-<p><strong>License Grant to Company</strong>. By making any User Content available on or through the Service, you grant to Playkami a non-exclusive, worldwide, royalty-free, perpetual, irrevocable, sublicensable, and transferable license to use, copy, reproduce, modify, adapt, create derivative works from, distribute, publicly perform, publicly display, and otherwise exploit such User Content in any form and any medium, whether now known or hereafter developed, for the purposes of operating, providing, improving, and promoting the Service and Playkami&#x27;s business operations.</p>
+<p><strong>License Grant to Company</strong>. By making any User Content available on or through the Service, you grant to The Social Experiment a non-exclusive, worldwide, royalty-free, perpetual, irrevocable, sublicensable, and transferable license to use, copy, reproduce, modify, adapt, create derivative works from, distribute, publicly perform, publicly display, and otherwise exploit such User Content in any form and any medium, whether now known or hereafter developed, for the purposes of operating, providing, improving, and promoting the Service and The Social Experiment&#x27;s business operations.</p>
 <p><strong>License Grant to Other Users</strong>. You also grant each user of the Service a non-exclusive license to access your User Content through the Service and to use, reproduce, distribute, display, and perform such User Content solely as permitted through the functionality of the Service and in accordance with this Agreement.</p>
 <p><strong>Representations and Warranties</strong>. You represent and warrant that: (i) you own all rights in and to your User Content or have obtained all necessary permissions, licenses, consents, and authorizations to grant the rights and licenses set forth herein; (ii) your User Content does not and will not infringe, misappropriate, or violate any third party&#x27;s intellectual property rights, rights of privacy or publicity, or any other proprietary rights; (iii) your User Content does not contain any material that is defamatory, obscene, unlawful, threatening, harassing, or otherwise objectionable; and (iv) your User Content complies with all applicable laws, rules, and regulations.</p>
-<p><strong>Feedback</strong>. If you provide Playkami with any ideas, suggestions, concepts, proposals, improvements, recommendations, feedback, or other input regarding the Service or Playkami&#x27;s products, services, or business operations (collectively, &quot;Feedback&quot;), you acknowledge and agree that: (i) such submission is voluntary and made at your own risk, and Playkami has no obligation, express or implied, to treat such Feedback as confidential or proprietary; (ii) Playkami may have already developed or received similar ideas, suggestions, or proposals from other sources; (iii) you irrevocably assign to Playkami all right, title, and interest in and to such Feedback, including all intellectual property rights therein, and Playkami may use, reproduce, modify, distribute, publicly display, publicly perform, prepare derivative works of, incorporate into other works, and otherwise freely exploit such Feedback for any purpose whatsoever, commercial or otherwise, without restriction, attribution, compensation, or notice to you; (iv) to the extent any such assignment is not permitted or effective under applicable law, you hereby grant Playkami a perpetual, irrevocable, non-exclusive, royalty-free, fully paid-up, worldwide, sublicensable, and transferable license to use, reproduce, modify, distribute, publicly display, publicly perform, prepare derivative works of, incorporate into other works, and otherwise exploit such Feedback for any purpose; and (v) you waive any moral rights or equivalent rights you may have in such Feedback. You represent and warrant that you have all rights necessary to submit such Feedback and to grant the foregoing rights to Playkami.</p>
-<p><strong>No Obligation to Monitor</strong>. Playkami has no obligation to monitor, review, or edit User Content, but reserves the right to do so at any time in its sole discretion. We may, but are not obligated to, remove or disable access to any User Content that we determine, in our sole discretion, violates this Agreement, infringes any intellectual property or other rights, or is otherwise objectionable.</p>
-<p><strong>Retention</strong>. Following termination or deactivation of your account, or if you remove any User Content from the Service, Playkami may retain your User Content for a reasonable period of time for backup, archival, audit, or legal purposes. Furthermore, copies of your User Content may remain viewable in cached or archived pages, or may have been copied or stored by other users.</p>
-<p><strong>Disclaimer</strong>. Playkami does not endorse any User Content or any opinion, recommendation, or advice expressed therein. Playkami expressly disclaims any and all liability in connection with User Content. You understand that by using the Service, you may be exposed to User Content that is inaccurate, offensive, indecent, or objectionable, and you agree to waive any legal or equitable rights or remedies you may have against [Company Name] with respect thereto.</p>
+<p><strong>Feedback</strong>. If you provide The Social Experiment with any ideas, suggestions, concepts, proposals, improvements, recommendations, feedback, or other input regarding the Service or The Social Experiment&#x27;s products, services, or business operations (collectively, &quot;Feedback&quot;), you acknowledge and agree that: (i) such submission is voluntary and made at your own risk, and The Social Experiment has no obligation, express or implied, to treat such Feedback as confidential or proprietary; (ii) The Social Experiment may have already developed or received similar ideas, suggestions, or proposals from other sources; (iii) you irrevocably assign to The Social Experiment all right, title, and interest in and to such Feedback, including all intellectual property rights therein, and The Social Experiment may use, reproduce, modify, distribute, publicly display, publicly perform, prepare derivative works of, incorporate into other works, and otherwise freely exploit such Feedback for any purpose whatsoever, commercial or otherwise, without restriction, attribution, compensation, or notice to you; (iv) to the extent any such assignment is not permitted or effective under applicable law, you hereby grant The Social Experiment a perpetual, irrevocable, non-exclusive, royalty-free, fully paid-up, worldwide, sublicensable, and transferable license to use, reproduce, modify, distribute, publicly display, publicly perform, prepare derivative works of, incorporate into other works, and otherwise exploit such Feedback for any purpose; and (v) you waive any moral rights or equivalent rights you may have in such Feedback. You represent and warrant that you have all rights necessary to submit such Feedback and to grant the foregoing rights to The Social Experiment.</p>
+<p><strong>No Obligation to Monitor</strong>. The Social Experiment has no obligation to monitor, review, or edit User Content, but reserves the right to do so at any time in its sole discretion. We may, but are not obligated to, remove or disable access to any User Content that we determine, in our sole discretion, violates this Agreement, infringes any intellectual property or other rights, or is otherwise objectionable.</p>
+<p><strong>Retention</strong>. Following termination or deactivation of your account, or if you remove any User Content from the Service, The Social Experiment may retain your User Content for a reasonable period of time for backup, archival, audit, or legal purposes. Furthermore, copies of your User Content may remain viewable in cached or archived pages, or may have been copied or stored by other users.</p>
+<p><strong>Disclaimer</strong>. The Social Experiment does not endorse any User Content or any opinion, recommendation, or advice expressed therein. The Social Experiment expressly disclaims any and all liability in connection with User Content. You understand that by using the Service, you may be exposed to User Content that is inaccurate, offensive, indecent, or objectionable, and you agree to waive any legal or equitable rights or remedies you may have against The Social Experiment with respect thereto.</p>
   </section>
 
   <section>
-<h2><span>18</span> Third-Party Service; Third-Party Terms</h2>
-<p>The Service may contain links to third-party properties, services, and applications (&quot;<strong>Third-Party Service</strong>&quot;). When you click on such links, you are subject to those parties&#x27; terms and policies. Third-Party Services are not under Playkami&#x27;s control. Playkami is not responsible for any Third-Party Service and provides links only as a convenience, without review, approval, endorsement, or warranty. You use Third-Party Service links at your own risk. When you leave our Service, our terms and policies no longer govern. Review all applicable agreements before proceeding with any third-party transaction.</p>
+<h2><span>17</span> Third-Party Service; Third-Party Terms</h2>
+<p>The Service may contain links to third-party properties, services, and applications (&quot;<strong>Third-Party Service</strong>&quot;). When you click on such links, you are subject to those parties&#x27; terms and policies. Third-Party Services are not under The Social Experiment&#x27;s control. The Social Experiment is not responsible for any Third-Party Service and provides links only as a convenience, without review, approval, endorsement, or warranty. You use Third-Party Service links at your own risk. When you leave our Service, our terms and policies no longer govern. Review all applicable agreements before proceeding with any third-party transaction.</p>
   </section>
 
   <section>
-<h2><span>19</span> Prohibited Activities</h2>
+<h2><span>18</span> Prohibited Activities</h2>
 <p>You agree to abide by this Agreement and will not (and will not attempt to):</p>
 <ol>
-<li>Provide false or misleading information to Playkami;</li>
-<li>Use or attempt to use another User&#x27;s Wallet without authorization;</li>
-<li>Create, list, or make available counterfeit Playkami NFTs;</li>
+<li>Provide false or misleading information to The Social Experiment;</li>
+<li>Use or attempt to use another User&#x27;s account or payment method without authorization;</li>
+<li>Misrepresent an Item’s identity, ownership, or condition when requesting a buyback or redemption;</li>
 <li>Impersonate another person or entity;</li>
 <li>Use the Service in any manner that could interfere with, disrupt, or negatively affect other Users or damage, disable, overburden, or impair the Service;</li>
 <li>Develop, utilize, or disseminate software or interact with any API in any manner that could harm the Service;</li>
@@ -448,125 +314,115 @@ You may not use metatags or &quot;hidden text&quot; utilizing &quot;Playkami&quo
 <li>Collect or harvest data for contacting individuals, companies, or entities, or use such data for direct marketing (including email, SMS, telemarketing, or direct marketing);</li>
 <li>Bypass or ignore automated access instructions;</li>
 <li>Use the Service for illegal or unauthorized purposes, or engage in activity violating applicable law or this Agreement;</li>
-<li>Use the applicable blockchain for illegal activities, including money laundering, terrorist financing, or activities adversely affecting blockchain or Service performance;</li>
-<li>Engage in or facilitate &quot;front-running,&quot; &quot;wash trading,&quot; &quot;pump and dump trading,&quot; &quot;ramping,&quot; &quot;cornering,&quot; or other fraudulent, deceptive, or manipulative trading activities, including: trading at successively manipulated prices to create false activity appearances; executing transactions with no material ownership change or entering orders knowing substantially similar orders have been or will be entered by the same or different parties; or participating in pools, syndicates, or accounts organized to unfairly influence market prices;</li>
+<li>Use the Service for illegal activities, including money laundering, terrorist financing, or activities adversely affecting Service performance;</li>
+<li>Manipulate transaction records, collectible valuations, or buyback eligibility to obtain an improper benefit;</li>
 <li>Use the Service for financial activities subject to registration or licensing, including securities, debt, or equity financings;</li>
-<li>Use the Service to participate in business, protocol, or platform fundraising, including creating, listing, or buying assets redeemable for financial instruments, giving ICO or securities offering participation rights, or entitling owners to financial rewards such as DeFi yield bonuses, staking bonuses, or burn discounts.</li>
+<li>Manipulate pack or draw results, exploit payment errors, abuse refunds or chargebacks, or obtain points or promotional benefits through deception.</li>
 </ol>
   </section>
 
   <section>
-<h2><span>20</span> Copyright</h2>
-<p>Playkami retains the absolute right to terminate access and remove User Content for any User who violates or infringes our rights or third-party rights. If you believe that any content on the Service infringes your copyright, you may submit a notification pursuant to the Digital Millennium Copyright Act by providing [Company Name]&#x27;s designated copyright agent with the information required under 17 U.S.C. § 512(c)(3). Our designated copyright agent for notice of alleged infringement is:
-Email: <a href="https://playkami.io">legal@playkami.io</a>
+<h2><span>19</span> Copyright</h2>
+<p>The Social Experiment retains the absolute right to terminate access and remove User Content for any User who violates or infringes our rights or third-party rights. If you believe that any content on the Service infringes your copyright, you may submit a notification pursuant to the Digital Millennium Copyright Act by providing The Social Experiment&#x27;s designated copyright agent with the information required under 17 U.S.C. § 512(c)(3). Our designated copyright agent for notice of alleged infringement is:
+Email: <a href="mailto:legal@rumbycollectibles.io">legal@rumbycollectibles.io</a>
 Subject Line: Copyright Agent</p>
   </section>
 
   <section>
-<h2><span>21</span> Investigations</h2>
-<p>If Playkami becomes aware of possible Agreement violations, we reserve the right (but have no obligation) to investigate. If we believe criminal activity may have occurred, we reserve the right to refer the matter to and cooperate with applicable legal authorities. Except as prohibited by law, we may disclose any information or materials in our possession in connection with your use of the Service: (i) to comply with applicable laws, legal process, or governmental requests; (ii) to enforce this Agreement; (iii) to respond to third-party claims that User Content violates their rights; (iv) to respond to customer service requests; or (v) to protect the rights, property, or safety of Playkami, its Users, or the public. By agreeing to this Agreement, you irrevocably consent to the foregoing. You acknowledge that you have no expectation of privacy concerning your use of the Service, including text, voice, or video communications.</p>
+<h2><span>20</span> Investigations</h2>
+<p>If The Social Experiment becomes aware of possible Agreement violations, we reserve the right (but have no obligation) to investigate. If we believe criminal activity may have occurred, we reserve the right to refer the matter to and cooperate with applicable legal authorities. Except as prohibited by law, we may disclose any information or materials in our possession in connection with your use of the Service: (i) to comply with applicable laws, legal process, or governmental requests; (ii) to enforce this Agreement; (iii) to respond to third-party claims that User Content violates their rights; (iv) to respond to customer service requests; or (v) to protect the rights, property, or safety of The Social Experiment, its Users, or the public. By agreeing to this Agreement, you irrevocably consent to the foregoing. Personal information handled in connection with an investigation remains subject to our Privacy Policy and applicable law.</p>
   </section>
 
   <section>
-<h2><span>22</span> Release</h2>
-<p>You hereby release and forever discharge Playkami and our officers, employees, agents, successors, and assigns (the &quot;<strong>Playkami Entities</strong>&quot;) from, and waive and relinquish, each past, present, and future dispute, claim, controversy, demand, right, obligation, liability, action, and cause of action of every kind (including personal injuries, death, and property damage) that has arisen or arises directly or indirectly out of, or relates to, the Service (including interactions with other Users or Third-Party Service).</p>
+<h2><span>21</span> Release</h2>
+<p>You hereby release and forever discharge The Social Experiment and our officers, employees, agents, successors, and assigns (the &quot;<strong>The Social Experiment Entities</strong>&quot;) from, and waive and relinquish, each past, present, and future dispute, claim, controversy, demand, right, obligation, liability, action, and cause of action of every kind (including personal injuries, death, and property damage) that has arisen or arises directly or indirectly out of, or relates to, the Service (including interactions with other Users or Third-Party Service).</p>
 <p><strong>YOU HEREBY WAIVE CALIFORNIA CIVIL CODE SECTION 1542, OR ANY SIMILAR LAW OR RULE OF ANY OTHER JURISDICTION, WHICH STATES: &quot;A GENERAL RELEASE DOES NOT EXTEND TO CLAIMS THAT THE CREDITOR OR RELEASING PARTY DOES NOT KNOW OR SUSPECT TO EXIST IN HIS OR HER FAVOR AT THE TIME OF EXECUTING THE RELEASE AND THAT, IF KNOWN BY HIM OR HER, WOULD HAVE MATERIALLY AFFECTED HIS OR HER SETTLEMENT WITH THE DEBTOR OR RELEASED PARTY.&quot;</strong></p>
   </section>
 
   <section>
-<h2><span>23</span> Assumption of Risk Related to Playkami NFTs</h2>
-<p>You acknowledge and agree that:</p>
-<ol>
-<li>You are solely responsible for determining applicable taxes on your Playkami NFT transactions. Neither Playkami nor any Playkami Entity is responsible for determining such taxes.</li>
-<li>Playkami NFTs exist and can be transferred only by virtue of ownership records maintained on the blockchain.</li>
-<li>There are risks associated with digital currency and assets, including hardware, software, and internet connection risks, malicious software risks, and risks of unauthorized third-party access.</li>
-<li>The legal and regulatory regime governing blockchain technologies, cryptocurrencies, and NFTs is evolving, and new regulations may materially adversely affect them.</li>
-<li>There are risks associated with purchasing user-generated content, including purchasing counterfeit, mislabeled, or vulnerable assets, assets on buggy smart contracts, and assets that may become untransferable.</li>
-<li>Playkami reserves the right to hide collections, contracts, and assets suspected of violating this Agreement. Your Playkami NFTs may become inaccessible on the Service. Under no circumstances shall inability to access or view your assets serve as grounds for a claim against Playkami.</li>
-<li>Playkami has no responsibility for any Playkami NFT after the initial offering or sale. We do not investigate and cannot guarantee or warrant the authenticity, originality, uniqueness, marketability, legality, or value of any Playkami NFT.</li>
-</ol>
+    <h2><span>22</span> Collectible and Transaction Risks</h2>
+<p>Collectible values and demand can change. We do not promise that an Item will retain value, sell at a particular price, or produce a profit. A displayed estimate is not a guarantee of market value. Randomized purchases may award Items worth less than the amount paid.</p>
+<p>Service interruptions, account compromise, payment disputes, incorrect information, and shipping problems can affect transactions. Use accurate details, protect your account, and promptly report issues. We may restrict an Item or transaction while investigating fraud, ownership conflicts, or errors, subject to applicable law and your rights under these Terms.</p>
   </section>
 
   <section>
-<h2><span>24</span> Tax Compliance and Prohibited Transactions</h2>
-<p>You are strictly prohibited from engaging in any form of tax avoidance or evasion on our marketplace. This includes creating multiple accounts to artificially lower taxable values by transferring goods between accounts at unreasonably low prices before requesting shipment. Any attempt to manipulate transactions to reduce tax obligations violates this Agreement and may result in account suspension, termination, and potential legal action. We reserve the right to investigate and report suspicious activity to appropriate tax authorities.</p>
+<h2><span>23</span> Tax Compliance and Prohibited Transactions</h2>
+<p>You may not falsify transaction amounts, ownership records, or shipping declarations to evade taxes. We may investigate suspected fraud and report it to the appropriate authorities as required or permitted by law.</p>
   </section>
 
   <section>
-<h2><span>25</span> Disclaimers</h2>
-<p><strong>THE SERVICE, CONTENT, AND PLAYKAMI NFTS ARE PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. PLAYKAMI (AND ITS SUPPLIERS) MAKE NO WARRANTY THAT THE SERVICE: (A) WILL MEET YOUR REQUIREMENTS; (B) WILL BE AVAILABLE ON AN UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE BASIS; OR (C) WILL BE ACCURATE, RELIABLE, COMPLETE, LEGAL, OR SAFE. PLAYKAMI DISCLAIMS ALL OTHER WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</strong></p>
-<p><strong>WHILE PLAYKAMI ATTEMPTS TO MAKE YOUR ACCESS TO AND USE OF THE SERVICE SAFE, WE CANNOT AND DO NOT REPRESENT OR WARRANT THAT THE SERVICE, CONTENT, OR PLAYKAMI NFTS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. WE CANNOT GUARANTEE THE SECURITY OF ANY DATA YOU DISCLOSE ONLINE. YOU ACCEPT THE INHERENT SECURITY RISKS OF PROVIDING INFORMATION AND TRANSACTING ONLINE AND AGREE NOT TO HOLD US RESPONSIBLE FOR ANY BREACH OF SECURITY UNLESS DUE TO OUR GROSS NEGLIGENCE.</strong></p>
-<p><strong>PLAYKAMI NFTS ARE INTANGIBLE DIGITAL ASSETS THAT EXIST ONLY BY VIRTUE OF OWNERSHIP RECORDS MAINTAINED ON THE BLOCKCHAIN. ANY TRANSFER OF TITLE OCCURS ON THE DECENTRALIZED LEDGER WITHIN THE BLOCKCHAIN PLATFORM. WE DO NOT GUARANTEE THAT PLAYKAMI CAN EFFECT THE TRANSFER OF TITLE OR RIGHT IN ANY PLAYKAMI NFT, NOR THAT ANY PLAYKAMI NFT WILL HAVE OR RETAIN ANY VALUE OR THAT YOU WILL BE ABLE TO SELL OR RESELL ANY PLAYKAMI NFT. PLAYKAMI IS NOT RESPONSIBLE FOR ANY LOSSES DUE TO VULNERABILITIES OR FAILURES OF SOFTWARE (INCLUDING SMART CONTRACTS), BLOCKCHAINS, OR FEATURES INHERENT TO PLAYKAMI NFTS, INCLUDING FORKS, TECHNICAL NODE ISSUES, OR OTHER BLOCKCHAIN-RELATED ISSUES.</strong></p>
-<p><strong>EXCEPT WHERE PLAYKAMI IS THE BUYER OR SELLER, PLAYKAMI IS NOT INVOLVED IN THE ACTUAL TRANSACTION BETWEEN BUYERS AND SELLERS AND IS NOT LIABLE FOR THIRD-PARTY CONDUCT, INCLUDING CONDUCT OF ASSET OR NFT SELLERS, THIRD-PARTY OFFERORS, OR OTHER USERS. THE RISK OF INJURY FROM SUCH THIRD PARTIES RESTS ENTIRELY WITH YOU. WHILE WE MAY HELP FACILITATE DISPUTE RESOLUTION, WE HAVE NO CONTROL OVER AND DO NOT GUARANTEE THE QUALITY, SAFETY, OR LEGALITY OF ASSETS, THE TRUTH OR ACCURACY OF LISTINGS, THE ABILITY OF BUYERS OR SELLERS TO COMPLETE TRANSACTIONS, OR THE STATEMENTS OF USERS OR THIRD-PARTY SELLERS.</strong></p>
-<p><strong>Nothing in this Agreement excludes or limits liability for fraud, death or bodily injury caused by negligence, or any other liability that cannot be limited or excluded under applicable law. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU</strong>.</p>
-<p>We do not transfer legal ownership of Assets from Seller to Buyer. California Commercial Code § 2401(2) and Uniform Commercial Code § 2-401(2) apply to ownership transfer unless otherwise agreed. We cannot guarantee continuous or secure Service access as operation may be interfered with by factors outside our control.</p>
+    <h2><span>24</span> Disclaimers</h2>
+<p><strong>TO THE FULLEST EXTENT PERMITTED BY LAW, THE SERVICE AND CONTENT ARE PROVIDED “AS IS” AND “AS AVAILABLE.” THE SOCIAL EXPERIMENT DISCLAIMS IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT GUARANTEE UNINTERRUPTED, ERROR-FREE, OR SECURE ACCESS, OR A PARTICULAR COLLECTIBLE VALUE, RANDOM RESULT, RESALE OPPORTUNITY, OR PAYMENT PROCESSING TIME.</strong></p>
+<p>Clerk, Stripe, shipping carriers, and other providers operate services outside our direct control. Interruptions or restrictions affecting them may affect the Service. This does not remove our obligations for our own services or any responsibility that cannot lawfully be excluded.</p>
+<p>Nothing in these Terms excludes or limits liability for fraud, death or personal injury caused by negligence, or other liability that cannot be excluded under applicable law. Mandatory consumer protections and any express commitments made with a transaction remain applicable.</p>
   </section>
 
   <section>
-<h2><span>26</span> Limitation of Liability</h2>
-<p><strong>TO THE FULLEST EXTENT PERMITTED BY LAW, PLAYKAMI WILL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY LOST PROFIT OR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT, THE SERVICE, OR ANY PLAYKAMI NFTS, OR FOR DAMAGES RELATED TO LOSS OF REVENUE, PROFITS, BUSINESS, ANTICIPATED SAVINGS, USE, GOODWILL, OR DATA, WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE AND EVEN IF PLAYKAMI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</strong></p>
-<p><strong>WITHOUT LIMITING THE FOREGOING, PLAYKAMI WILL NOT BE LIABLE FOR ANY LOSS ARISING FROM ANY ACTION TAKEN IN RELIANCE ON SERVICE MATERIAL OR INFORMATION, INCLUDING ANY RECOMMENDATION, OR FOR ANY PURCHASE OR USE OF PLAYKAMI NFTS, INCLUDING LOSSES, DAMAGES, OR CLAIMS ARISING FROM: (I) USER ERROR SUCH AS FORGOTTEN PASSWORDS, INCORRECTLY CONSTRUCTED TRANSACTIONS, OR MISTYPED ADDRESSES; (II) SERVER FAILURE OR DATA LOSS; (III) CORRUPTED WALLET FILES; (IV) UNAUTHORIZED ACCESS TO APPLICATIONS; OR (V) UNAUTHORIZED THIRD-PARTY ACTIVITIES, INCLUDING VIRUSES, PHISHING, BRUTEFORCING, OR OTHER ATTACKS.</strong></p>
+<h2><span>25</span> Limitation of Liability</h2>
+<p><strong>TO THE FULLEST EXTENT PERMITTED BY LAW, THE SOCIAL EXPERIMENT WILL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY LOST PROFIT OR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES ARISING FROM THIS AGREEMENT, THE SERVICE, OR ANY ITEMS, OR FOR DAMAGES RELATED TO LOSS OF REVENUE, PROFITS, BUSINESS, ANTICIPATED SAVINGS, USE, GOODWILL, OR DATA, WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE AND EVEN IF THE SOCIAL EXPERIMENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</strong></p>
+<p><strong>WITHOUT LIMITING THE FOREGOING, THE SOCIAL EXPERIMENT WILL NOT BE LIABLE FOR ANY LOSS ARISING FROM ANY ACTION TAKEN IN RELIANCE ON SERVICE MATERIAL OR INFORMATION, INCLUDING ANY RECOMMENDATION, OR FOR ANY PURCHASE OR USE OF ITEMS, INCLUDING LOSSES, DAMAGES, OR CLAIMS ARISING FROM: (I) USER ERROR SUCH AS FORGOTTEN PASSWORDS, INCORRECTLY CONSTRUCTED TRANSACTIONS, OR MISTYPED ADDRESSES; (II) SERVER FAILURE OR DATA LOSS; (III) COMPROMISED ACCOUNT CREDENTIALS; (IV) UNAUTHORIZED ACCESS TO APPLICATIONS; OR (V) UNAUTHORIZED THIRD-PARTY ACTIVITIES, INCLUDING VIRUSES, PHISHING, BRUTEFORCING, OR OTHER ATTACKS.</strong></p>
 <p><strong>ACCESS TO AND USE OF THE SERVICE IS AT YOUR OWN DISCRETION AND RISK, AND YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR MOBILE DEVICE OR LOSS OF DATA RESULTING THEREFROM.</strong></p>
-<p><strong>NOTWITHSTANDING ANYTHING TO THE CONTRARY HEREIN, IN NO EVENT SHALL PLAYKAMI&#x27;S MAXIMUM AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT, YOUR USE OF THE SERVICE, CONTENT, ASSET MANAGEMENT SERVICES, OR ANY PLAYKAMI NFTS EXCEED THE GREATER OF: (A) $100; OR (B) THE AMOUNT RETAINED BY PLAYKAMI IN THE TRANSACTION OR INCIDENT THAT IS THE SUBJECT OF THE CLAIM.</strong></p>
+<p><strong>NOTWITHSTANDING ANYTHING TO THE CONTRARY HEREIN, IN NO EVENT SHALL THE SOCIAL EXPERIMENT&#x27;S MAXIMUM AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT, YOUR USE OF THE SERVICE, CONTENT, ITEM STORAGE AND FULFILLMENT SERVICES, OR ANY ITEMS EXCEED THE GREATER OF: (A) $100; OR (B) THE AMOUNT RETAINED BY THE SOCIAL EXPERIMENT IN THE TRANSACTION OR INCIDENT THAT IS THE SUBJECT OF THE CLAIM.</strong></p>
 <p><strong>Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to you.</strong></p>
   </section>
 
   <section>
-<h2><span>27</span> Dispute Resolution</h2>
-<p><strong>Agreement to Arbitrate</strong>. You and Playkami agree that any dispute, claim, or controversy arising out of or relating to this Agreement, the Service, or your relationship with Playkami (collectively, &quot;<strong>Disputes</strong>&quot;) will be resolved exclusively through final and binding arbitration, rather than in court, except that: (a) either party may assert claims in small claims court if the claims qualify; and (b) either party may seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of intellectual property rights. This agreement to arbitrate is intended to be broadly interpreted and applies to all Disputes, whether based in contract, tort, statute, fraud, misrepresentation, or any other legal theory, and whether arising before or after the termination of this Agreement.</p>
-<p><strong>Arbitration Rules and Procedures</strong>. The arbitration will be administered by JAMS pursuant to its Comprehensive Arbitration Rules and Procedures, or, for claims under $250,000, the Streamlined Arbitration Rules and Procedures, available at www.jamsadr.com. The Federal Arbitration Act, 9 U.S.C. §§ 1-16, governs the interpretation and enforcement of this dispute resolution provision. To initiate arbitration, you must send a written demand for arbitration to Playkami at [legal@playkami.io], describing the nature of your claim and the relief sought. Playkami will send any demand for arbitration to the email address associated with your account. The arbitration will be conducted in the English language and will take place in [Delaware], unless you and Playkami agree otherwise or the arbitrator determines that such location would impose an undue burden on you, in which case the arbitration may be conducted by telephone, videoconference, or based on written submissions as determined by the arbitrator.</p>
-<p><strong>Arbitration Fees and Costs</strong>. Payment of all filing, administration, and arbitrator fees will be governed by JAMS rules. If you demonstrate that such fees would be prohibitively burdensome compared to litigation, Playkami will pay as much of the filing, administration, and arbitrator fees as the arbitrator deems necessary to prevent the arbitration from being prohibitively burdensome. Each party shall bear its own attorneys&#x27; fees and costs unless the arbitrator determines that a claim or defense was frivolous or brought for an improper purpose, in which case the arbitrator may award reasonable attorneys&#x27; fees and costs to the prevailing party.</p>
+<h2><span>26</span> Dispute Resolution</h2>
+<p><strong>Agreement to Arbitrate</strong>. You and The Social Experiment agree that any dispute, claim, or controversy arising out of or relating to this Agreement, the Service, or your relationship with The Social Experiment (collectively, &quot;<strong>Disputes</strong>&quot;) will be resolved exclusively through final and binding arbitration, rather than in court, except that: (a) either party may assert claims in small claims court if the claims qualify; and (b) either party may seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of intellectual property rights. This agreement to arbitrate is intended to be broadly interpreted and applies to all Disputes, whether based in contract, tort, statute, fraud, misrepresentation, or any other legal theory, and whether arising before or after the termination of this Agreement.</p>
+<p><strong>Arbitration Rules and Procedures</strong>. The arbitration will be administered by JAMS pursuant to its Comprehensive Arbitration Rules and Procedures, or, for claims under $250,000, the Streamlined Arbitration Rules and Procedures, available at <a href="https://www.jamsadr.com">www.jamsadr.com</a>. The Federal Arbitration Act, 9 U.S.C. §§ 1-16, governs the interpretation and enforcement of this dispute resolution provision. To initiate arbitration, you must send a written demand for arbitration to The Social Experiment at <a href="mailto:legal@rumbycollectibles.io">legal@rumbycollectibles.io</a>, describing the nature of your claim and the relief sought. The Social Experiment will send any demand for arbitration to the email address associated with your account. The arbitration will be conducted in the English language and will take place in [Delaware], unless you and The Social Experiment agree otherwise or the arbitrator determines that such location would impose an undue burden on you, in which case the arbitration may be conducted by telephone, videoconference, or based on written submissions as determined by the arbitrator.</p>
+<p><strong>Arbitration Fees and Costs</strong>. Payment of all filing, administration, and arbitrator fees will be governed by JAMS rules. If you demonstrate that such fees would be prohibitively burdensome compared to litigation, The Social Experiment will pay as much of the filing, administration, and arbitrator fees as the arbitrator deems necessary to prevent the arbitration from being prohibitively burdensome. Each party shall bear its own attorneys&#x27; fees and costs unless the arbitrator determines that a claim or defense was frivolous or brought for an improper purpose, in which case the arbitrator may award reasonable attorneys&#x27; fees and costs to the prevailing party.</p>
 <p><strong>Authority of Arbitrator</strong>. The arbitrator shall have exclusive authority to resolve all Disputes, including any claim that all or any part of this dispute resolution provision is void or voidable. The arbitrator shall have the authority to grant any remedy that would otherwise be available in court, provided that the arbitrator may not award relief that exceeds what this Agreement permits. The arbitrator&#x27;s decision shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.</p>
-<p><strong>Waiver of Jury Trial</strong>. YOU AND PLAYKAMI HEREBY WAIVE ANY CONSTITUTIONAL AND STATUTORY RIGHTS TO SUE IN COURT AND TO HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY. You and Playkami are instead electing to resolve all Disputes through arbitration as set forth herein. In the event that any Dispute is determined to be non-arbitrable, you and Playkami agree to waive any right to a jury trial with respect to such Dispute.</p>
-<p><strong>Waiver of Class and Collective Relief</strong>. ALL DISPUTES MUST BE BROUGHT IN THE PARTIES&#x27; INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, OR REPRESENTATIVE PROCEEDING. YOU AND [COMPANY NAME] EXPRESSLY WAIVE ANY RIGHT TO FILE OR PARTICIPATE IN A CLASS ACTION OR SEEK RELIEF ON A CLASS OR COLLECTIVE BASIS. The arbitrator may not consolidate more than one person&#x27;s claims and may not preside over any form of class, collective, or representative proceeding. If this waiver of class or collective relief is found to be unenforceable as to a particular Dispute, then that Dispute shall be severed and proceed in a court of competent jurisdiction, while all remaining Disputes shall proceed in arbitration on an individual basis.</p>
-<p><strong>30-Day Right to Opt Out</strong>. You have the right to opt out of this agreement to arbitrate by sending written notice of your decision to opt out to support@playkami.io within thirty (30) days of first accepting this Agreement. Your notice must include your name, mailing address, account username (if applicable), and a clear statement that you wish to opt out of this arbitration provision. If you opt out, neither you nor Playkami will be required to arbitrate Disputes, and all other provisions of this Agreement will remain in effect. If you do not opt out within the 30-day period, you will be deemed to have agreed to this arbitration provision. Opting out of this arbitration provision does not affect any other arbitration agreements you may have entered into with Playkami.</p>
+<p><strong>Waiver of Jury Trial</strong>. YOU AND THE SOCIAL EXPERIMENT HEREBY WAIVE ANY CONSTITUTIONAL AND STATUTORY RIGHTS TO SUE IN COURT AND TO HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY. You and The Social Experiment are instead electing to resolve all Disputes through arbitration as set forth herein. In the event that any Dispute is determined to be non-arbitrable, you and The Social Experiment agree to waive any right to a jury trial with respect to such Dispute.</p>
+<p><strong>Waiver of Class and Collective Relief</strong>. ALL DISPUTES MUST BE BROUGHT IN THE PARTIES&#x27; INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, OR REPRESENTATIVE PROCEEDING. YOU AND THE SOCIAL EXPERIMENT EXPRESSLY WAIVE ANY RIGHT TO FILE OR PARTICIPATE IN A CLASS ACTION OR SEEK RELIEF ON A CLASS OR COLLECTIVE BASIS. The arbitrator may not consolidate more than one person&#x27;s claims and may not preside over any form of class, collective, or representative proceeding. If this waiver of class or collective relief is found to be unenforceable as to a particular Dispute, then that Dispute shall be severed and proceed in a court of competent jurisdiction, while all remaining Disputes shall proceed in arbitration on an individual basis.</p>
+<p><strong>30-Day Right to Opt Out</strong>. You have the right to opt out of this agreement to arbitrate by sending written notice of your decision to opt out to <a href="mailto:support@rumbycollectibles.io">support@rumbycollectibles.io</a> within thirty (30) days of first accepting this Agreement. Your notice must include your name, mailing address, account username (if applicable), and a clear statement that you wish to opt out of this arbitration provision. If you opt out, neither you nor The Social Experiment will be required to arbitrate Disputes, and all other provisions of this Agreement will remain in effect. If you do not opt out within the 30-day period, you will be deemed to have agreed to this arbitration provision. Opting out of this arbitration provision does not affect any other arbitration agreements you may have entered into with The Social Experiment.</p>
 <p><strong>Survival</strong>. This dispute resolution provision shall survive termination of this Agreement and your use of the Service.</p>
-<p><strong>Modifications</strong>. If Playkami makes any material changes to this dispute resolution provision, such changes will not apply to any Dispute for which you provided written notice to Playkami prior to the date of the change.</p>
+<p><strong>Modifications</strong>. If The Social Experiment makes any material changes to this dispute resolution provision, such changes will not apply to any Dispute for which you provided written notice to The Social Experiment prior to the date of the change.</p>
   </section>
 
   <section>
-<h2><span>28</span> General</h2>
-<p>The Service may be subject to U.S. export control laws and export or import regulations in other countries. You agree not to use, export, reexport, or transfer U.S. technical data acquired from Playkami, or products utilizing such data, in violation of U.S. export laws or regulations. You may not use, export, import, or transfer the Service except as authorized by U.S. law, the laws of the jurisdiction where you obtained the Service, and any other applicable laws. You acknowledge that products, services, or technology provided by Playkami are subject to U.S. export control laws and regulations. You shall comply with these laws and shall not, without prior U.S. government authorization, export, re-export, or transfer Playkami products, services, or technology to any country in violation of such laws.
+<h2><span>27</span> General</h2>
+<p>The Service may be subject to U.S. export control laws and export or import regulations in other countries. You agree not to use, export, reexport, or transfer U.S. technical data acquired from The Social Experiment, or products utilizing such data, in violation of U.S. export laws or regulations. You may not use, export, import, or transfer the Service except as authorized by U.S. law, the laws of the jurisdiction where you obtained the Service, and any other applicable laws. You acknowledge that products, services, or technology provided by The Social Experiment are subject to U.S. export control laws and regulations. You shall comply with these laws and shall not, without prior U.S. government authorization, export, re-export, or transfer The Social Experiment products, services, or technology to any country in violation of such laws.
 This Agreement and your access to and use of the Service shall be governed by and construed in accordance with the laws of the State of California, without regard to conflict of law principles. Any dispute not subject to arbitration or small claims court shall be resolved in state or federal courts of San Francisco, California.
 If you are a California resident, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Product of the California Department of Consumer Affairs at 1625 North Market Blvd, Suite N 112, Sacramento, CA 95834, or by telephone at (800) 952-5210.
 We reserve the right in our sole discretion to: (i) modify, suspend, or discontinue the Service, or any features or parts thereof, temporarily or permanently, with or without notice; and (ii) terminate your right to access or use the Service at any time for any or no reason. We shall have no liability or obligation to you in connection with any such event, and you will not be entitled to a refund of any amounts already paid, to the fullest extent permitted by law.
-If any term, clause, or provision of this Agreement is held invalid or unenforceable, that portion will be severable and will not affect the validity or enforceability of any remaining portion. This Agreement may not be transferred or assigned by you without our prior written consent. Our failure to assert any right or provision shall not constitute a waiver. Except as otherwise provided herein, this Agreement is intended solely for the benefit of Playkami and you and shall not confer third-party beneficiary rights.</p>
+If any term, clause, or provision of this Agreement is held invalid or unenforceable, that portion will be severable and will not affect the validity or enforceability of any remaining portion. This Agreement may not be transferred or assigned by you without our prior written consent. Our failure to assert any right or provision shall not constitute a waiver. Except as otherwise provided herein, this Agreement is intended solely for the benefit of The Social Experiment and you and shall not confer third-party beneficiary rights.</p>
   </section>
 
   <section>
-<h2><span>29</span> Giveaways and Sweepstakes</h2>
-<p><strong>Overview</strong>. From time to time, Playkami may offer promotional giveaways, sweepstakes, contests, or similar incentive programs (&quot;Promotions&quot;). These Promotions are subject to this section, this Agreement, and any additional Official Rules provided for each Promotion. In any conflict, the Official Rules govern over this section, and this section governs over the remaining Terms.</p>
-<p><strong>Eligibility</strong>. Participation is void where prohibited by law. You must meet all requirements in the Official Rules, including age, residency, and account status criteria. Certain Promotions may require a registered Playkami account in good standing.</p>
-<p><strong>No Purchase Necessary</strong>. Unless otherwise stated, no purchase or payment is required to enter or win. As an Alternate Method of Entry (&quot;AMOE&quot;), eligible users may enter by: creating a Playkami account (if not already having one); logging in daily to claim points as specified in the Official Rules; and clicking the designated entry link on the Promotion page without purchase or payment. Entry link: https://playkami.io/promotions. Specific details are outlined in the Official Rules. All AMOE entries must be received during the Promotion Period.</p>
+<h2><span>28</span> Giveaways and Sweepstakes</h2>
+<p><strong>Overview</strong>. From time to time, The Social Experiment may offer promotional giveaways, sweepstakes, contests, or similar incentive programs (&quot;Promotions&quot;). These Promotions are subject to this section, this Agreement, and any additional Official Rules provided for each Promotion. In any conflict, the Official Rules govern over this section, and this section governs over the remaining Terms.</p>
+<p><strong>Eligibility</strong>. Participation is void where prohibited by law. You must meet all requirements in the Official Rules, including age, residency, and account status criteria. Certain Promotions may require a registered The Social Experiment account in good standing.</p>
+<p><strong>No Purchase Necessary</strong>. Unless otherwise stated, no purchase or payment is required to enter or win. As an Alternate Method of Entry (&quot;AMOE&quot;), eligible users may enter by: creating a The Social Experiment account (if not already having one); logging in daily to claim points as specified in the Official Rules; and clicking the designated entry link on the Promotion page without purchase or payment. Entry link: <a href="https://rumbycollectibles.io/promotions">https://rumbycollectibles.io/promotions</a>. Specific details are outlined in the Official Rules. All AMOE entries must be received during the Promotion Period.</p>
 <p><strong>Odds and Prizes</strong>. Odds of winning depend on eligible entries received. Prizes, approximate retail values, and relevant restrictions are described in the Official Rules. Any applicable taxes, fees, or expenses not specifically included in the prize are the winner&#x27;s sole responsibility.</p>
-<p><strong>Winner Selection and Notification</strong>. Winners will be selected at random (or by criteria set forth in the Official Rules) from eligible entries. Winners will be notified using their Playkami account contact information. You are responsible for ensuring your contact information is accurate and current.</p>
+<p><strong>Winner Selection and Notification</strong>. Winners will be selected at random (or by criteria set forth in the Official Rules) from eligible entries. Winners will be notified using their The Social Experiment account contact information. You are responsible for ensuring your contact information is accurate and current.</p>
 <p><strong>Compliance and Disqualification</strong>. We reserve the right to disqualify any participant who tampers with the entry process, circumvents rules, violates this Agreement, or engages in fraudulent or unethical behavior. We may cancel, suspend, or modify any Promotion due to force majeure or factors beyond our reasonable control, as permitted by law.</p>
-<p><strong>Limitation of Liability</strong>. By participating, you acknowledge that Playkami, its affiliates, subsidiaries, partners, and their officers, directors, employees, and agents will not be liable for any claims, losses, or damages arising from participation, including technical failures, unauthorized tampering, or non-delivery of communications.</p>
+<p><strong>Limitation of Liability</strong>. By participating, you acknowledge that The Social Experiment, its affiliates, subsidiaries, partners, and their officers, directors, employees, and agents will not be liable for any claims, losses, or damages arising from participation, including technical failures, unauthorized tampering, or non-delivery of communications.</p>
 <p><strong>Governing Law and Venue</strong>. Unless otherwise specified, Promotions are governed by the laws specified in this Agreement without regard to conflict of law principles, and disputes shall be handled per the dispute resolution provisions herein.</p>
 <p>By using the Service or participating in any Promotion, you agree to be bound by this section, this Agreement, and all applicable Official Rules.</p>
   </section>
 
   <section>
-<h2><span>30</span> Contact Information</h2>
-<p>Email: <a href="mailto://contact@playkami.io">contact@playkami.io</a></p>
-<p>Legal: <a href="mailto://legal@playkami.io">legal@playkami.io</a></p>
+<h2><span>29</span> Contact Information</h2>
+<p>The Social Experiment LLC, operator of The Social Experiment</p>
+<p>Email: <a href="mailto:contact@rumbycollectibles.io">contact@rumbycollectibles.io</a></p>
+<p>Legal: <a href="mailto:legal@rumbycollectibles.io">legal@rumbycollectibles.io</a></p>
 <p>Address: 8 The Green, Suite R, Dover, DE 19901, United States</p>
   </section>`
 
 const pages = {
   '/privacy-policy': {
-    title: 'Privacy Policy | PlayKami',
-    description: 'Learn how PlayKami collects, uses, and protects your information.',
+    title: 'Privacy Policy | The Social Experiment',
+    description: 'Learn how The Social Experiment collects, uses, and protects your information.',
     content: privacyPolicy
   },
   '/terms-of-service': {
-    title: 'Terms of Service | PlayKami',
-    description: 'Read the terms that govern your use of PlayKami.',
+    title: 'Terms of Service | The Social Experiment',
+    description: 'Read the terms that govern your use of The Social Experiment.',
     content: termsOfService
   },
   '/tos': {
-    title: 'Terms of Service | PlayKami',
-    description: 'Read the terms that govern your use of PlayKami.',
+    title: 'Terms of Service | The Social Experiment',
+    description: 'Read the terms that govern your use of The Social Experiment.',
     content: termsOfService
   }
 }
